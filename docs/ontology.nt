@@ -1,0 +1,256 @@
+<http://purl.org/twc/mcs/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.org/twc/mcs/> <http://www.w3.org/2002/07/owl#versionIRI> <http://purl.org/twc/mcs/0.1> .
+<http://purl.org/twc/mcs/> <http://www.w3.org/2002/07/owl#imports> <http://schema.org/> .
+<http://purl.org/twc/mcs/> <http://purl.org/vocab/vann/preferredNamespacePrefix> "mcs" .
+<http://purl.org/twc/mcs/> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://purl.org/twc/mcs/" .
+<http://purl.org/twc/mcs/> <http://schema.org/creator> "Henrique O. Santos" .
+<http://purl.org/twc/mcs/> <http://schema.org/dateCreated> "2020-06-22" .
+<http://purl.org/twc/mcs/> <http://schema.org/description> "The main goal in commonsense reasoning is to improve score against specific commonsense question-answering benchmarks. In this context, there exists leaderboards that act as a hub for hosting benchmarks and allowing systems submissions that try to improve the score. These benchmarks vary in structure. Some provide questions and answer choices, while others may require systems to reason over observations and provide explanations by the choice of a most appropriate hypothesis. This is an ontology that provide a common vocabulary for annotating datasets that compose commonsense reasoning benchmarks, as well as submissions, and systems. Its goal is to allow diverse benchmarks to be compared, integrated and also support the analysis of systems and machine-learning models." .
+<http://purl.org/twc/mcs/> <http://schema.org/name> "MCS Ontology" .
+<http://purl.org/twc/mcs/> <http://www.w3.org/2002/07/owl#versionInfo> "0.1"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/creator
+<http://schema.org/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/dateCreated
+<http://schema.org/dateCreated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/description
+<http://schema.org/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/name
+<http://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/twc/mcs/antecedent
+<http://purl.org/twc/mcs/antecedent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/twc/mcs/antecedent> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/hasPart> .
+<http://schema.org/hasPart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/twc/mcs/antecedent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/twc/mcs/BenchmarkSample> .
+<http://purl.org/twc/mcs/antecedent> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/twc/mcs/BenchmarkAntecedent> .
+<http://purl.org/twc/mcs/antecedent> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the list of elements (antecedent) that is part of this benchmark sample." .
+<http://purl.org/twc/mcs/antecedent> <http://www.w3.org/2000/01/rdf-schema#label> "antecedent" .
+# 
+# http://purl.org/twc/mcs/choices
+<http://purl.org/twc/mcs/choices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/twc/mcs/choices> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/hasPart> .
+<http://purl.org/twc/mcs/choices> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/twc/mcs/BenchmarkSample> .
+<http://purl.org/twc/mcs/choices> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/twc/mcs/BenchmarkChoices> .
+<http://purl.org/twc/mcs/choices> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a list of benchmark choices that is part of this benchmark sample." .
+<http://purl.org/twc/mcs/choices> <http://www.w3.org/2000/01/rdf-schema#label> "choices" .
+# 
+# http://purl.org/twc/mcs/resultOf
+<http://purl.org/twc/mcs/resultOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/twc/mcs/resultOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://schema.org/result> .
+<http://schema.org/result> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/twc/mcs/resultOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Thing> .
+<http://schema.org/Thing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/mcs/resultOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/Action> .
+<http://schema.org/Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/mcs/resultOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The result produced in the action. Inverse of result." .
+<http://purl.org/twc/mcs/resultOf> <http://www.w3.org/2000/01/rdf-schema#label> "resultOf" .
+# 
+# http://purl.org/twc/mcs/sample
+<http://purl.org/twc/mcs/sample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/twc/mcs/sample> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/hasPart> .
+<http://purl.org/twc/mcs/sample> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/twc/mcs/BenchmarkDataset> .
+<http://purl.org/twc/mcs/sample> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/twc/mcs/BenchmarkSample> .
+<http://purl.org/twc/mcs/sample> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a benchmark sample that is part of this benchmark dataset." .
+<http://purl.org/twc/mcs/sample> <http://www.w3.org/2000/01/rdf-schema#label> "sample" .
+# 
+# http://schema.org/hasPart
+# 
+# http://schema.org/result
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/twc/mcs/Benchmark
+<http://purl.org/twc/mcs/Benchmark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/mcs/Benchmark> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/DataCatalog> .
+<http://schema.org/DataCatalog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/mcs/Benchmark> <http://www.w3.org/2000/01/rdf-schema#comment> "A collection of datasets composing a QA benchmark." .
+<http://purl.org/twc/mcs/Benchmark> <http://www.w3.org/2000/01/rdf-schema#label> "Benchmark" .
+# 
+# http://purl.org/twc/mcs/BenchmarkAnswer
+<http://purl.org/twc/mcs/BenchmarkAnswer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/mcs/BenchmarkAnswer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/twc/mcs/BenchmarkChoice> .
+<http://purl.org/twc/mcs/BenchmarkAnswer> <http://www.w3.org/2000/01/rdf-schema#comment> "Text of a benchmark answer choice." .
+<http://purl.org/twc/mcs/BenchmarkAnswer> <http://www.w3.org/2000/01/rdf-schema#label> "Benchmark Answer" .
+# 
+# http://purl.org/twc/mcs/BenchmarkAntecedent
+<http://purl.org/twc/mcs/BenchmarkAntecedent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/mcs/BenchmarkAntecedent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/ItemList> .
+<http://schema.org/ItemList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/mcs/BenchmarkAntecedent> <http://www.w3.org/2000/01/rdf-schema#comment> "A list of elements that compose a benchmark sample." .
+<http://purl.org/twc/mcs/BenchmarkAntecedent> <http://www.w3.org/2000/01/rdf-schema#label> "Benchmark Antecedent" .
+# 
+# http://purl.org/twc/mcs/BenchmarkChoice
+<http://purl.org/twc/mcs/BenchmarkChoice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/mcs/BenchmarkChoice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/ListItem> .
+<http://schema.org/ListItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/mcs/BenchmarkChoice> <http://www.w3.org/2000/01/rdf-schema#comment> "A possible choice for a benchmark sample." .
+<http://purl.org/twc/mcs/BenchmarkChoice> <http://www.w3.org/2000/01/rdf-schema#label> "Benchmark Choice" .
+# 
+# http://purl.org/twc/mcs/BenchmarkChoices
+<http://purl.org/twc/mcs/BenchmarkChoices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/mcs/BenchmarkChoices> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/ItemList> .
+<http://purl.org/twc/mcs/BenchmarkChoices> <http://www.w3.org/2000/01/rdf-schema#comment> "List of possible choices in a benchmark sample." .
+<http://purl.org/twc/mcs/BenchmarkChoices> <http://www.w3.org/2000/01/rdf-schema#label> "Benchmark Choices" .
+# 
+# http://purl.org/twc/mcs/BenchmarkConcept
+<http://purl.org/twc/mcs/BenchmarkConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/mcs/BenchmarkConcept> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/ListItem> .
+<http://purl.org/twc/mcs/BenchmarkConcept> <http://www.w3.org/2000/01/rdf-schema#comment> "The ConceptNet concept which the question of created from (i.e. electricity)." .
+<http://purl.org/twc/mcs/BenchmarkConcept> <http://www.w3.org/2000/01/rdf-schema#label> "Benchmark Concept" .
+# 
+# http://purl.org/twc/mcs/BenchmarkContext
+<http://purl.org/twc/mcs/BenchmarkContext> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/mcs/BenchmarkContext> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/ListItem> .
+<http://purl.org/twc/mcs/BenchmarkContext> <http://www.w3.org/2000/01/rdf-schema#comment> "Context text about the question." .
+<http://purl.org/twc/mcs/BenchmarkContext> <http://www.w3.org/2000/01/rdf-schema#label> "Benchmark Context" .
+# 
+# http://purl.org/twc/mcs/BenchmarkDataset
+<http://purl.org/twc/mcs/BenchmarkDataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/mcs/BenchmarkDataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Dataset> .
+<http://schema.org/Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/mcs/BenchmarkDataset> <http://www.w3.org/2000/01/rdf-schema#comment> "A file containing questions/answers of a QA benchmark." .
+<http://purl.org/twc/mcs/BenchmarkDataset> <http://www.w3.org/2000/01/rdf-schema#label> "Benchmark Dataset" .
+# 
+# http://purl.org/twc/mcs/BenchmarkDevDataset
+<http://purl.org/twc/mcs/BenchmarkDevDataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/mcs/BenchmarkDevDataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/twc/mcs/BenchmarkDataset> .
+<http://purl.org/twc/mcs/BenchmarkDevDataset> <http://www.w3.org/2000/01/rdf-schema#comment> "A dataset containing dev questions/asnwers of a QA bechmark." .
+<http://purl.org/twc/mcs/BenchmarkDevDataset> <http://www.w3.org/2000/01/rdf-schema#label> "Benchmark DevDataset" .
+# 
+# http://purl.org/twc/mcs/BenchmarkGoal
+<http://purl.org/twc/mcs/BenchmarkGoal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/mcs/BenchmarkGoal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/ListItem> .
+<http://purl.org/twc/mcs/BenchmarkGoal> <http://www.w3.org/2000/01/rdf-schema#comment> "Text of a benchmark goal." .
+<http://purl.org/twc/mcs/BenchmarkGoal> <http://www.w3.org/2000/01/rdf-schema#label> "Benchmark Goal" .
+# 
+# http://purl.org/twc/mcs/BenchmarkHypothesis
+<http://purl.org/twc/mcs/BenchmarkHypothesis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/mcs/BenchmarkHypothesis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/twc/mcs/BenchmarkChoice> .
+<http://purl.org/twc/mcs/BenchmarkHypothesis> <http://www.w3.org/2000/01/rdf-schema#comment> "Text of a benchmark hypothesis choice." .
+<http://purl.org/twc/mcs/BenchmarkHypothesis> <http://www.w3.org/2000/01/rdf-schema#label> "Benchmark Hypothesis" .
+# 
+# http://purl.org/twc/mcs/BenchmarkObservation
+<http://purl.org/twc/mcs/BenchmarkObservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/mcs/BenchmarkObservation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/ListItem> .
+<http://purl.org/twc/mcs/BenchmarkObservation> <http://www.w3.org/2000/01/rdf-schema#comment> "Narrative text for an observation." .
+<http://purl.org/twc/mcs/BenchmarkObservation> <http://www.w3.org/2000/01/rdf-schema#label> "Benchmark Observation" .
+# 
+# http://purl.org/twc/mcs/BenchmarkQuestion
+<http://purl.org/twc/mcs/BenchmarkQuestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/mcs/BenchmarkQuestion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/ListItem> .
+<http://purl.org/twc/mcs/BenchmarkQuestion> <http://www.w3.org/2000/01/rdf-schema#comment> "Text of a benchmark question." .
+<http://purl.org/twc/mcs/BenchmarkQuestion> <http://www.w3.org/2000/01/rdf-schema#label> "Benchmark Question" .
+# 
+# http://purl.org/twc/mcs/BenchmarkQuestionCategory
+<http://purl.org/twc/mcs/BenchmarkQuestionCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/mcs/BenchmarkQuestionCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/ListItem> .
+<http://purl.org/twc/mcs/BenchmarkQuestionCategory> <http://www.w3.org/2000/01/rdf-schema#comment> "The category of a benchmark question (i.e. temporal reasoming, temporal sequences ...)" .
+<http://purl.org/twc/mcs/BenchmarkQuestionCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Benchmark Question Category" .
+# 
+# http://purl.org/twc/mcs/BenchmarkQuestionType
+<http://purl.org/twc/mcs/BenchmarkQuestionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/mcs/BenchmarkQuestionType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/ListItem> .
+<http://purl.org/twc/mcs/BenchmarkQuestionType> <http://www.w3.org/2000/01/rdf-schema#comment> "The type of a benchmark question (i.e. multiple choice, true/false)." .
+<http://purl.org/twc/mcs/BenchmarkQuestionType> <http://www.w3.org/2000/01/rdf-schema#label> "Benchmark Question Type" .
+# 
+# http://purl.org/twc/mcs/BenchmarkSample
+<http://purl.org/twc/mcs/BenchmarkSample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/mcs/BenchmarkSample> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/CreativeWork> .
+<http://schema.org/CreativeWork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/mcs/BenchmarkSample> <http://www.w3.org/2000/01/rdf-schema#comment> "An entry in a benchmark dataset (e.g. questions, observations, goals ...)" .
+<http://purl.org/twc/mcs/BenchmarkSample> <http://www.w3.org/2000/01/rdf-schema#label> "Benchmark Sample" .
+# 
+# http://purl.org/twc/mcs/BenchmarkSolution
+<http://purl.org/twc/mcs/BenchmarkSolution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/mcs/BenchmarkSolution> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/twc/mcs/BenchmarkChoice> .
+<http://purl.org/twc/mcs/BenchmarkSolution> <http://www.w3.org/2000/01/rdf-schema#comment> "Text of a benchmark solution choice." .
+<http://purl.org/twc/mcs/BenchmarkSolution> <http://www.w3.org/2000/01/rdf-schema#label> "Benchmark Solution" .
+# 
+# http://purl.org/twc/mcs/BenchmarkTestDataset
+<http://purl.org/twc/mcs/BenchmarkTestDataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/mcs/BenchmarkTestDataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/twc/mcs/BenchmarkDataset> .
+<http://purl.org/twc/mcs/BenchmarkTestDataset> <http://www.w3.org/2000/01/rdf-schema#comment> "A dataset containing test questions of a QA bechmark." .
+<http://purl.org/twc/mcs/BenchmarkTestDataset> <http://www.w3.org/2000/01/rdf-schema#label> "Benchmark TestDataset" .
+# 
+# http://purl.org/twc/mcs/BenchmarkTrainingDataset
+<http://purl.org/twc/mcs/BenchmarkTrainingDataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/mcs/BenchmarkTrainingDataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/twc/mcs/BenchmarkDataset> .
+<http://purl.org/twc/mcs/BenchmarkTrainingDataset> <http://www.w3.org/2000/01/rdf-schema#comment> "A dataset containing training questions/asnwers of a QA bechmark." .
+<http://purl.org/twc/mcs/BenchmarkTrainingDataset> <http://www.w3.org/2000/01/rdf-schema#label> "Benchmark TrainingDataset" .
+# 
+# http://purl.org/twc/mcs/DevScore
+<http://purl.org/twc/mcs/DevScore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/mcs/DevScore> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Rating> .
+<http://schema.org/Rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/mcs/DevScore> <http://www.w3.org/2000/01/rdf-schema#comment> "Score of correct predictions agains a dev benchmark dataset." .
+<http://purl.org/twc/mcs/DevScore> <http://www.w3.org/2000/01/rdf-schema#label> "DevScore" .
+# 
+# http://purl.org/twc/mcs/Submission
+<http://purl.org/twc/mcs/Submission> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/mcs/Submission> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Dataset> .
+<http://purl.org/twc/mcs/Submission> <http://www.w3.org/2000/01/rdf-schema#comment> "A submission dataset from a QA system with prediction choices for a benchmark." .
+<http://purl.org/twc/mcs/Submission> <http://www.w3.org/2000/01/rdf-schema#label> "Submission" .
+# 
+# http://purl.org/twc/mcs/SubmissionSample
+<http://purl.org/twc/mcs/SubmissionSample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/mcs/SubmissionSample> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/CreativeWork> .
+<http://purl.org/twc/mcs/SubmissionSample> <http://www.w3.org/2000/01/rdf-schema#comment> "An entry in a submission dataset (i.e. a prediction)." .
+<http://purl.org/twc/mcs/SubmissionSample> <http://www.w3.org/2000/01/rdf-schema#label> "Submission Sample" .
+# 
+# http://purl.org/twc/mcs/TestScore
+<http://purl.org/twc/mcs/TestScore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/twc/mcs/TestScore> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Rating> .
+<http://purl.org/twc/mcs/TestScore> <http://www.w3.org/2000/01/rdf-schema#comment> "Score of correct predictions agains a test benchmark dataset." .
+<http://purl.org/twc/mcs/TestScore> <http://www.w3.org/2000/01/rdf-schema#label> "TestScore" .
+# 
+# http://schema.org/Action
+# 
+# http://schema.org/CreativeWork
+# 
+# http://schema.org/DataCatalog
+# 
+# http://schema.org/Dataset
+# 
+# http://schema.org/ItemList
+# 
+# http://schema.org/ListItem
+# 
+# http://schema.org/Rating
+# 
+# http://schema.org/Thing
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

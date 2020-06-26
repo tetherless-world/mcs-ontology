@@ -1,0 +1,821 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://schema.org", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://purl.org/twc/mcs" ],
+    "iri" : "http://purl.org/twc/mcs/",
+    "version" : "0.1",
+    "author" : [ "Henrique O. Santos" ],
+    "description" : {
+      "undefined" : "The main goal in commonsense reasoning is to improve score against specific commonsense question-answering benchmarks. In this context, there exists leaderboards that act as a hub for hosting benchmarks and allowing systems submissions that try to improve the score. These benchmarks vary in structure. Some provide questions and answer choices, while others may require systems to reason over observations and provide explanations by the choice of a most appropriate hypothesis. This is an ontology that provide a common vocabulary for annotating datasets that compose commonsense reasoning benchmarks, as well as submissions, and systems. Its goal is to allow diverse benchmarks to be compared, integrated and also support the analysis of systems and machine-learning models."
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Henrique O. Santos",
+        "type" : "label"
+      } ],
+      "dateCreated" : [ {
+        "identifier" : "dateCreated",
+        "language" : "undefined",
+        "value" : "2020-06-22",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "mcs",
+        "type" : "label"
+      } ],
+      "name" : [ {
+        "identifier" : "name",
+        "language" : "undefined",
+        "value" : "MCS Ontology",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://purl.org/twc/mcs/",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://purl.org/twc/mcs/BenchmarkTestDataset",
+    "baseIri" : "http://purl.org/twc/mcs",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BenchmarkTestDataset",
+      "undefined" : "Benchmark TestDataset"
+    },
+    "comment" : {
+      "undefined" : "A dataset containing test questions of a QA bechmark."
+    },
+    "id" : "5",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://purl.org/twc/mcs/BenchmarkConcept",
+    "baseIri" : "http://purl.org/twc/mcs",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BenchmarkConcept",
+      "undefined" : "Benchmark Concept"
+    },
+    "comment" : {
+      "undefined" : "The ConceptNet concept which the question of created from (i.e. electricity)."
+    },
+    "id" : "7",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://schema.org/DataCatalog",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataCatalog"
+    },
+    "subClasses" : [ "14" ],
+    "attributes" : [ "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://schema.org/Action",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Action"
+    },
+    "attributes" : [ "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://purl.org/twc/mcs/Benchmark",
+    "baseIri" : "http://purl.org/twc/mcs",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Benchmark",
+      "undefined" : "Benchmark"
+    },
+    "comment" : {
+      "undefined" : "A collection of datasets composing a QA benchmark."
+    },
+    "id" : "14",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://schema.org/Rating",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Rating"
+    },
+    "subClasses" : [ "26", "27" ],
+    "attributes" : [ "external" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://schema.org/CreativeWork",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CreativeWork"
+    },
+    "subClasses" : [ "19", "16" ],
+    "attributes" : [ "external" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://purl.org/twc/mcs/BenchmarkQuestionType",
+    "baseIri" : "http://purl.org/twc/mcs",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BenchmarkQuestionType",
+      "undefined" : "Benchmark Question Type"
+    },
+    "comment" : {
+      "undefined" : "The type of a benchmark question (i.e. multiple choice, true/false)."
+    },
+    "id" : "46",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://schema.org/ItemList",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ItemList"
+    },
+    "subClasses" : [ "45", "24" ],
+    "attributes" : [ "external" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://purl.org/twc/mcs/BenchmarkDataset",
+    "baseIri" : "http://purl.org/twc/mcs",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BenchmarkDataset",
+      "undefined" : "Benchmark Dataset"
+    },
+    "subClasses" : [ "5", "48", "49" ],
+    "comment" : {
+      "undefined" : "A file containing questions/answers of a QA benchmark."
+    },
+    "id" : "6",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://purl.org/twc/mcs/BenchmarkDevDataset",
+    "baseIri" : "http://purl.org/twc/mcs",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BenchmarkDevDataset",
+      "undefined" : "Benchmark DevDataset"
+    },
+    "comment" : {
+      "undefined" : "A dataset containing dev questions/asnwers of a QA bechmark."
+    },
+    "id" : "48",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://purl.org/twc/mcs/SubmissionSample",
+    "baseIri" : "http://purl.org/twc/mcs",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SubmissionSample",
+      "undefined" : "Submission Sample"
+    },
+    "comment" : {
+      "undefined" : "An entry in a submission dataset (i.e. a prediction)."
+    },
+    "id" : "16",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://schema.org/ListItem",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ListItem"
+    },
+    "subClasses" : [ "55", "46", "57", "7", "41", "31", "43", "35" ],
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://purl.org/twc/mcs/BenchmarkContext",
+    "baseIri" : "http://purl.org/twc/mcs",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BenchmarkContext",
+      "undefined" : "Benchmark Context"
+    },
+    "comment" : {
+      "undefined" : "Context text about the question."
+    },
+    "id" : "35",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://purl.org/twc/mcs/BenchmarkGoal",
+    "baseIri" : "http://purl.org/twc/mcs",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BenchmarkGoal",
+      "undefined" : "Benchmark Goal"
+    },
+    "comment" : {
+      "undefined" : "Text of a benchmark goal."
+    },
+    "id" : "55",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://purl.org/twc/mcs/BenchmarkSample",
+    "baseIri" : "http://purl.org/twc/mcs",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BenchmarkSample",
+      "undefined" : "Benchmark Sample"
+    },
+    "comment" : {
+      "undefined" : "An entry in a benchmark dataset (e.g. questions, observations, goals ...)"
+    },
+    "id" : "19",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "1",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://purl.org/twc/mcs/BenchmarkChoice",
+    "baseIri" : "http://purl.org/twc/mcs",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BenchmarkChoice",
+      "undefined" : "Benchmark Choice"
+    },
+    "subClasses" : [ "39", "37", "30" ],
+    "comment" : {
+      "undefined" : "A possible choice for a benchmark sample."
+    },
+    "id" : "31",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://purl.org/twc/mcs/BenchmarkTrainingDataset",
+    "baseIri" : "http://purl.org/twc/mcs",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BenchmarkTrainingDataset",
+      "undefined" : "Benchmark TrainingDataset"
+    },
+    "comment" : {
+      "undefined" : "A dataset containing training questions/asnwers of a QA bechmark."
+    },
+    "id" : "49",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://purl.org/twc/mcs/BenchmarkAntecedent",
+    "baseIri" : "http://purl.org/twc/mcs",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BenchmarkAntecedent",
+      "undefined" : "Benchmark Antecedent"
+    },
+    "comment" : {
+      "undefined" : "A list of elements that compose a benchmark sample."
+    },
+    "id" : "45",
+    "superClasses" : [ "47" ]
+  }, {
+    "iri" : "http://purl.org/twc/mcs/BenchmarkAnswer",
+    "baseIri" : "http://purl.org/twc/mcs",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BenchmarkAnswer",
+      "undefined" : "Benchmark Answer"
+    },
+    "comment" : {
+      "undefined" : "Text of a benchmark answer choice."
+    },
+    "id" : "39",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://purl.org/twc/mcs/Submission",
+    "baseIri" : "http://purl.org/twc/mcs",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Submission",
+      "undefined" : "Submission"
+    },
+    "comment" : {
+      "undefined" : "A submission dataset from a QA system with prediction choices for a benchmark."
+    },
+    "id" : "23",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://purl.org/twc/mcs/BenchmarkHypothesis",
+    "baseIri" : "http://purl.org/twc/mcs",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BenchmarkHypothesis",
+      "undefined" : "Benchmark Hypothesis"
+    },
+    "comment" : {
+      "undefined" : "Text of a benchmark hypothesis choice."
+    },
+    "id" : "30",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://schema.org/Thing",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Thing"
+    },
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://purl.org/twc/mcs/BenchmarkQuestionCategory",
+    "baseIri" : "http://purl.org/twc/mcs",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BenchmarkQuestionCategory",
+      "undefined" : "Benchmark Question Category"
+    },
+    "comment" : {
+      "undefined" : "The category of a benchmark question (i.e. temporal reasoming, temporal sequences ...)"
+    },
+    "id" : "43",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://purl.org/twc/mcs/DevScore",
+    "baseIri" : "http://purl.org/twc/mcs",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DevScore",
+      "undefined" : "DevScore"
+    },
+    "comment" : {
+      "undefined" : "Score of correct predictions agains a dev benchmark dataset."
+    },
+    "id" : "27",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://schema.org/Dataset",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Dataset"
+    },
+    "subClasses" : [ "23", "6" ],
+    "attributes" : [ "external" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://purl.org/twc/mcs/BenchmarkQuestion",
+    "baseIri" : "http://purl.org/twc/mcs",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BenchmarkQuestion",
+      "undefined" : "Benchmark Question"
+    },
+    "comment" : {
+      "undefined" : "Text of a benchmark question."
+    },
+    "id" : "57",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://purl.org/twc/mcs/BenchmarkSolution",
+    "baseIri" : "http://purl.org/twc/mcs",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BenchmarkSolution",
+      "undefined" : "Benchmark Solution"
+    },
+    "comment" : {
+      "undefined" : "Text of a benchmark solution choice."
+    },
+    "id" : "37",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://purl.org/twc/mcs/BenchmarkChoices",
+    "baseIri" : "http://purl.org/twc/mcs",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BenchmarkChoices",
+      "undefined" : "Benchmark Choices"
+    },
+    "comment" : {
+      "undefined" : "List of possible choices in a benchmark sample."
+    },
+    "id" : "24",
+    "superClasses" : [ "47" ]
+  }, {
+    "iri" : "http://purl.org/twc/mcs/BenchmarkObservation",
+    "baseIri" : "http://purl.org/twc/mcs",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BenchmarkObservation",
+      "undefined" : "Benchmark Observation"
+    },
+    "comment" : {
+      "undefined" : "Narrative text for an observation."
+    },
+    "id" : "41",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://purl.org/twc/mcs/TestScore",
+    "baseIri" : "http://purl.org/twc/mcs",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TestScore",
+      "undefined" : "TestScore"
+    },
+    "comment" : {
+      "undefined" : "Score of correct predictions agains a test benchmark dataset."
+    },
+    "id" : "26",
+    "superClasses" : [ "25" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "4",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "2",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://schema.org/hasPart",
+    "baseIri" : "http://schema.org",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasPart"
+    },
+    "domain" : "1",
+    "subproperty" : [ "2", "3", "4" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://purl.org/twc/mcs/resultOf",
+    "inverse" : "12",
+    "baseIri" : "http://purl.org/twc/mcs",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "resultOf",
+      "undefined" : "resultOf"
+    },
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "The result produced in the action. Inverse of result."
+    },
+    "attributes" : [ "object" ],
+    "id" : "9"
+  }, {
+    "range" : "17",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "15"
+  }, {
+    "range" : "17",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "18"
+  }, {
+    "range" : "21",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "20"
+  }, {
+    "range" : "21",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://purl.org/twc/mcs/choices",
+    "baseIri" : "http://purl.org/twc/mcs",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "choices",
+      "undefined" : "choices"
+    },
+    "superproperty" : [ "0" ],
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Indicates a list of benchmark choices that is part of this benchmark sample."
+    },
+    "attributes" : [ "object" ],
+    "id" : "4"
+  }, {
+    "range" : "25",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "28"
+  }, {
+    "range" : "31",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "29"
+  }, {
+    "range" : "25",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "32"
+  }, {
+    "range" : "13",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "33"
+  }, {
+    "range" : "8",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
+  }, {
+    "range" : "31",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  }, {
+    "range" : "31",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
+  }, {
+    "range" : "8",
+    "domain" : "41",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "40"
+  }, {
+    "range" : "8",
+    "domain" : "43",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "42"
+  }, {
+    "range" : "8",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://purl.org/twc/mcs/antecedent",
+    "baseIri" : "http://purl.org/twc/mcs",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "antecedent",
+      "undefined" : "antecedent"
+    },
+    "superproperty" : [ "0" ],
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Indicates the list of elements (antecedent) that is part of this benchmark sample."
+    },
+    "attributes" : [ "object" ],
+    "id" : "2"
+  }, {
+    "range" : "47",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "50"
+  }, {
+    "range" : "6",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "51"
+  }, {
+    "range" : "6",
+    "domain" : "48",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "52"
+  }, {
+    "range" : "6",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "53"
+  }, {
+    "range" : "8",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "54"
+  }, {
+    "range" : "8",
+    "domain" : "46",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "56"
+  }, {
+    "range" : "8",
+    "domain" : "57",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "58"
+  }, {
+    "range" : "8",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "59"
+  }, {
+    "range" : "47",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://schema.org/result",
+    "baseIri" : "http://schema.org",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "result"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://purl.org/twc/mcs/sample",
+    "baseIri" : "http://purl.org/twc/mcs",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "sample",
+      "undefined" : "sample"
+    },
+    "superproperty" : [ "0" ],
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Indicates a benchmark sample that is part of this benchmark dataset."
+    },
+    "attributes" : [ "object" ],
+    "id" : "3"
+  } ]
+}
