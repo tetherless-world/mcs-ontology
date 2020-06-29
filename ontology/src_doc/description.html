@@ -2,4 +2,156 @@
 <span class="markdown">
 <img src="top.png">
 <img src="benchmark.png">
+
+<h4>Example 1: A Benchmark in JSON-LD</h4>
+<pre><code>
+{
+    "@context": "http://schema.org/",
+    "@id": "SocialIQA",
+    "@type": "Benchmark",
+    "name": "SocialIQA",
+    "abstract": "We introduce Social IQa: Social Interaction QA, a new question-answering benchmark
+    for testing social commonsense intelligence. Contrary to many prior benchmarks that focus on
+    physical or taxonomic knowledge, Social IQa focuses on reasoning about people’s actions and
+    their social implications. For example, given an action like \"Jesse saw a concert\" and a
+    question like \"Why did Jesse do this?\", humans can easily infer that Jesse wanted \"to see
+    their favorite performer\" or \"to enjoy the music\", and not \"to see what's happening inside\"
+    or \"to see if it works\". The actions in Social IQa span a wide variety of social situations,
+    and answer candidates contain both human-curated answers and adversarially-filtered machine-generated
+    candidates. Social IQa contains over 37,000 QA pairs for evaluating models’ abilities to reason
+    about the social implications of everyday events and situations.",
+    "author": [
+        {
+            "@type": "Person",
+            "name": "Maarten Sap"
+        },
+        {
+            "@type": "Person",
+            "name": "Hannah Rashkin"
+        },
+        {
+            "@type": "Person",
+            "name": "Derek Chen"
+        },
+        {
+            "@type": "Person",
+            "name": "Ronan Le Bras"
+        },
+        {
+            "@type": "Person",
+            "name": "Yejin Choi"
+        }
+    ],
+    "dataset": [
+        {
+            "@id": "SocialIQA/train",
+            "@type": "BenchmarkTrainingDataset",
+            "name": "SocialIQA training dataset"
+        },
+        {
+            "@id": "SocialIQA/dev",
+            "@type": "BenchmarkDevDataset",
+            "name": "SocialIQA dev dataset"
+        }
+    ]
+}
+</code></pre>
+
+<h4>Example 2: A Benchmark sample in JSON-LD</h4>
+<pre><code>
+{
+    "@context": "http://schema.org/",
+    "@id": "SocialIQA-[line_number]",
+    "@type": "BenchmarkSample",
+    "includedInDataset": "SocialIQA/train",
+    "antecedent": {
+        "@type": "BenchmarkSampleAntecedent",
+        "numberOfItems": 2,
+        "itemListElement": [
+            {
+                "@type": "BenchmarkContext",
+                "name": "Context",
+                "text": "Aubrey offered tribute to the gods. They did this out of reverence.",
+                "position": 0
+            },
+            {
+                "@type": "BenchmarkQuestion",
+                "name": "Question",
+                "text": "How would Others feel as a result?",
+                "position": 1
+            }
+        ]
+    },
+    "choice": {
+        "@type": "BenchmarkChoices",
+        "numberOfItems": 3,
+        "itemListElement": [
+            {
+                "@type": "BenchmarkAnswer",
+                "text": "they were diffierent",
+                "position": 1
+            },
+            {
+                "@type": "BenchmarkAnswer",
+                "text": "religious and spiritual",
+                "position": 2
+            },
+            {
+                "@type": "BenchmarkAnswer",
+                "text": "they were unique",
+                "position": 3
+            }
+        ]
+    },
+    "correctChoice": 3
+}
+</code></pre>
+
+<h4>Example 3: A Submission in JSON-LD</h4>
+<pre><code>
+{
+    "@context": "http://schema.org/",
+    "@id": "brg0m7uqaup1kchu59g0",
+    "@type": "Submission",
+    "name": "cycic-roberta4",
+    "description": "This is the RobertaForMultipleChoice model provided by huggingface that was used to evaluate and refine the CycIC dataset. It was trained for 4 epochs with a learning rate of 5e-05. https://github.com/cycorp/cycic-transformers",
+    "dateCreated": "06-09-2020T18:20:15Z",
+    "isBasedOn": "CycIC",
+    "contributor": {
+        "@type": "Person",
+        "name": "Sam Teeter from Cycorp"
+    },
+    "contentRating": [
+        {
+            "@type": "TestScore",
+            "name": "Test Score",
+            "value": "0.7676"
+        },
+        {
+            "@type": "DevScore",
+            "name": "Dev Score",
+            "value": "0.7711"
+        }
+    ],
+    "resultOf": {
+        "@type": "SoftwareApplication",
+        "startTime": "06-09-2020T18:22:53Z",
+        "endTime": "06-09-2020T19:17:11Z",
+        "url": "https://github.com/cycorp/cycic-transformers"
+    }
+}
+</code></pre>
+
+<h4>Example 4: A Submission sample (prediction) in JSON-LD</h4>
+<pre><code>
+{
+    "@context": "http://schema.org/",
+    "@type": "SubmissionSample",
+    "@id": "CycIC-324917-submission",
+    "includedInDataset": "brg0m7uqaup1kchu59g0",
+    "value": 2,
+    "about": "CycIC-324917"
+}
+</code></pre>
+
 </span>
