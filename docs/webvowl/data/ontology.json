@@ -7,7 +7,7 @@
     "version" : "0.1",
     "author" : [ "Henrique O. Santos" ],
     "description" : {
-      "undefined" : "The main goal in commonsense reasoning is to improve score against specific commonsense question-answering benchmarks. In this context, there exists leaderboards that act as a hub for hosting benchmarks and allowing systems submissions that try to improve the score. These benchmarks vary in structure. Some provide questions and answer choices, while others may require systems to reason over observations and provide explanations by the choice of a most appropriate hypothesis. This is an ontology that provide a common vocabulary for annotating datasets that compose commonsense reasoning benchmarks, as well as submissions, and systems. Its goal is to allow diverse benchmarks to be compared, integrated and also support the analysis of systems and machine-learning models."
+      "undefined" : "The main goal in commonsense reasoning is to improve score against specific commonsense question-answering benchmarks. In this context, there exist leaderboards that act as a hub for hosting benchmarks and allowing systems submissions that try to improve the score. These benchmarks vary in structure. Some provide questions and answer choices, while others may require systems to reason over observations and provide explanations by the choice of the most appropriate hypothesis. This is an ontology that provides a common vocabulary for annotating datasets that compose commonsense reasoning benchmarks, as well as submissions, and systems. Its goal is to allow diverse benchmarks to be compared, integrated, and also support the analysis of systems and machine-learning models."
     },
     "other" : {
       "creator" : [ {
@@ -122,22 +122,22 @@
     "id" : "10",
     "type" : "owl:Class"
   }, {
-    "id" : "43",
-    "type" : "owl:Class"
-  }, {
     "id" : "27",
     "type" : "owl:Class"
   }, {
-    "id" : "21",
+    "id" : "43",
     "type" : "owl:Class"
   }, {
     "id" : "57",
     "type" : "owl:Class"
   }, {
-    "id" : "37",
+    "id" : "21",
     "type" : "owl:Class"
   }, {
     "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
     "type" : "owl:Class"
   }, {
     "id" : "41",
@@ -152,7 +152,7 @@
     "instances" : 0,
     "label" : {
       "IRI-based" : "BenchmarkTestDataset",
-      "undefined" : "Benchmark TestDataset"
+      "undefined" : "BenchmarkTestDataset"
     },
     "comment" : {
       "undefined" : "A dataset containing test questions of a QA bechmark."
@@ -165,7 +165,7 @@
     "instances" : 0,
     "label" : {
       "IRI-based" : "BenchmarkConcept",
-      "undefined" : "Benchmark Concept"
+      "undefined" : "BenchmarkConcept"
     },
     "comment" : {
       "undefined" : "The ConceptNet concept which the question of created from (i.e. electricity)."
@@ -230,7 +230,7 @@
     "instances" : 0,
     "label" : {
       "IRI-based" : "BenchmarkQuestionType",
-      "undefined" : "Benchmark Question Type"
+      "undefined" : "BenchmarkQuestionType"
     },
     "comment" : {
       "undefined" : "The type of a benchmark question (i.e. multiple choice, true/false)."
@@ -253,7 +253,7 @@
     "instances" : 0,
     "label" : {
       "IRI-based" : "BenchmarkDataset",
-      "undefined" : "Benchmark Dataset"
+      "undefined" : "BenchmarkDataset"
     },
     "subClasses" : [ "5", "48", "49" ],
     "comment" : {
@@ -267,7 +267,7 @@
     "instances" : 0,
     "label" : {
       "IRI-based" : "BenchmarkDevDataset",
-      "undefined" : "Benchmark DevDataset"
+      "undefined" : "BenchmarkDevDataset"
     },
     "comment" : {
       "undefined" : "A dataset containing dev questions/asnwers of a QA bechmark."
@@ -280,7 +280,7 @@
     "instances" : 0,
     "label" : {
       "IRI-based" : "SubmissionSample",
-      "undefined" : "Submission Sample"
+      "undefined" : "SubmissionSample"
     },
     "comment" : {
       "undefined" : "An entry in a submission dataset (i.e. a prediction)."
@@ -303,7 +303,7 @@
     "instances" : 0,
     "label" : {
       "IRI-based" : "BenchmarkContext",
-      "undefined" : "Benchmark Context"
+      "undefined" : "BenchmarkContext"
     },
     "comment" : {
       "undefined" : "Context text about the question."
@@ -316,7 +316,7 @@
     "instances" : 0,
     "label" : {
       "IRI-based" : "BenchmarkGoal",
-      "undefined" : "Benchmark Goal"
+      "undefined" : "BenchmarkGoal"
     },
     "comment" : {
       "undefined" : "Text of a benchmark goal."
@@ -329,7 +329,7 @@
     "instances" : 0,
     "label" : {
       "IRI-based" : "BenchmarkSample",
-      "undefined" : "Benchmark Sample"
+      "undefined" : "BenchmarkSample"
     },
     "comment" : {
       "undefined" : "An entry in a benchmark dataset (e.g. questions, observations, goals ...)"
@@ -349,7 +349,7 @@
     "instances" : 0,
     "label" : {
       "IRI-based" : "BenchmarkChoice",
-      "undefined" : "Benchmark Choice"
+      "undefined" : "BenchmarkChoice"
     },
     "subClasses" : [ "39", "37", "30" ],
     "comment" : {
@@ -363,7 +363,7 @@
     "instances" : 0,
     "label" : {
       "IRI-based" : "BenchmarkTrainingDataset",
-      "undefined" : "Benchmark TrainingDataset"
+      "undefined" : "BenchmarkTrainingDataset"
     },
     "comment" : {
       "undefined" : "A dataset containing training questions/asnwers of a QA bechmark."
@@ -376,7 +376,7 @@
     "instances" : 0,
     "label" : {
       "IRI-based" : "BenchmarkAntecedent",
-      "undefined" : "Benchmark Antecedent"
+      "undefined" : "BenchmarkAntecedent"
     },
     "comment" : {
       "undefined" : "A list of elements that compose a benchmark sample."
@@ -389,7 +389,7 @@
     "instances" : 0,
     "label" : {
       "IRI-based" : "BenchmarkAnswer",
-      "undefined" : "Benchmark Answer"
+      "undefined" : "BenchmarkAnswer"
     },
     "comment" : {
       "undefined" : "Text of a benchmark answer choice."
@@ -415,7 +415,7 @@
     "instances" : 0,
     "label" : {
       "IRI-based" : "BenchmarkHypothesis",
-      "undefined" : "Benchmark Hypothesis"
+      "undefined" : "BenchmarkHypothesis"
     },
     "comment" : {
       "undefined" : "Text of a benchmark hypothesis choice."
@@ -432,19 +432,6 @@
     "attributes" : [ "external" ],
     "id" : "10"
   }, {
-    "iri" : "http://purl.org/twc/mcs/BenchmarkQuestionCategory",
-    "baseIri" : "http://purl.org/twc/mcs",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "BenchmarkQuestionCategory",
-      "undefined" : "Benchmark Question Category"
-    },
-    "comment" : {
-      "undefined" : "The category of a benchmark question (i.e. temporal reasoming, temporal sequences ...)"
-    },
-    "id" : "43",
-    "superClasses" : [ "8" ]
-  }, {
     "iri" : "http://purl.org/twc/mcs/DevScore",
     "baseIri" : "http://purl.org/twc/mcs",
     "instances" : 0,
@@ -458,6 +445,32 @@
     "id" : "27",
     "superClasses" : [ "25" ]
   }, {
+    "iri" : "http://purl.org/twc/mcs/BenchmarkQuestionCategory",
+    "baseIri" : "http://purl.org/twc/mcs",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BenchmarkQuestionCategory",
+      "undefined" : "BenchmarkQuestionCategory"
+    },
+    "comment" : {
+      "undefined" : "The category of a benchmark question (i.e. temporal reasoming, temporal sequences ...)"
+    },
+    "id" : "43",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://purl.org/twc/mcs/BenchmarkQuestion",
+    "baseIri" : "http://purl.org/twc/mcs",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BenchmarkQuestion",
+      "undefined" : "BenchmarkQuestion"
+    },
+    "comment" : {
+      "undefined" : "Text of a benchmark question."
+    },
+    "id" : "57",
+    "superClasses" : [ "8" ]
+  }, {
     "iri" : "http://schema.org/Dataset",
     "baseIri" : "http://schema.org",
     "instances" : 0,
@@ -468,38 +481,12 @@
     "attributes" : [ "external" ],
     "id" : "21"
   }, {
-    "iri" : "http://purl.org/twc/mcs/BenchmarkQuestion",
-    "baseIri" : "http://purl.org/twc/mcs",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "BenchmarkQuestion",
-      "undefined" : "Benchmark Question"
-    },
-    "comment" : {
-      "undefined" : "Text of a benchmark question."
-    },
-    "id" : "57",
-    "superClasses" : [ "8" ]
-  }, {
-    "iri" : "http://purl.org/twc/mcs/BenchmarkSolution",
-    "baseIri" : "http://purl.org/twc/mcs",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "BenchmarkSolution",
-      "undefined" : "Benchmark Solution"
-    },
-    "comment" : {
-      "undefined" : "Text of a benchmark solution choice."
-    },
-    "id" : "37",
-    "superClasses" : [ "31" ]
-  }, {
     "iri" : "http://purl.org/twc/mcs/BenchmarkChoices",
     "baseIri" : "http://purl.org/twc/mcs",
     "instances" : 0,
     "label" : {
       "IRI-based" : "BenchmarkChoices",
-      "undefined" : "Benchmark Choices"
+      "undefined" : "BenchmarkChoices"
     },
     "comment" : {
       "undefined" : "List of possible choices in a benchmark sample."
@@ -507,12 +494,25 @@
     "id" : "24",
     "superClasses" : [ "47" ]
   }, {
+    "iri" : "http://purl.org/twc/mcs/BenchmarkSolution",
+    "baseIri" : "http://purl.org/twc/mcs",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BenchmarkSolution",
+      "undefined" : "BenchmarkSolution"
+    },
+    "comment" : {
+      "undefined" : "Text of a benchmark solution choice."
+    },
+    "id" : "37",
+    "superClasses" : [ "31" ]
+  }, {
     "iri" : "http://purl.org/twc/mcs/BenchmarkObservation",
     "baseIri" : "http://purl.org/twc/mcs",
     "instances" : 0,
     "label" : {
       "IRI-based" : "BenchmarkObservation",
-      "undefined" : "Benchmark Observation"
+      "undefined" : "BenchmarkObservation"
     },
     "comment" : {
       "undefined" : "Narrative text for an observation."
@@ -650,22 +650,22 @@
   }, {
     "range" : "17",
     "domain" : "16",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "15"
   }, {
     "range" : "17",
     "domain" : "19",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "18"
   }, {
     "range" : "21",
     "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "20"
   }, {
     "range" : "21",
     "domain" : "23",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "22"
   }, {
     "iri" : "http://purl.org/twc/mcs/choices",
@@ -685,52 +685,52 @@
   }, {
     "range" : "25",
     "domain" : "26",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "28"
   }, {
     "range" : "31",
     "domain" : "30",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "29"
   }, {
     "range" : "25",
     "domain" : "27",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "32"
   }, {
     "range" : "13",
     "domain" : "14",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "33"
   }, {
     "range" : "8",
     "domain" : "35",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "34"
   }, {
     "range" : "31",
     "domain" : "37",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "36"
   }, {
     "range" : "31",
     "domain" : "39",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "38"
   }, {
     "range" : "8",
     "domain" : "41",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "40"
   }, {
     "range" : "8",
     "domain" : "43",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "42"
   }, {
     "range" : "8",
     "domain" : "31",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "44"
   }, {
     "iri" : "http://purl.org/twc/mcs/antecedent",
@@ -750,47 +750,47 @@
   }, {
     "range" : "47",
     "domain" : "24",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "50"
   }, {
     "range" : "6",
     "domain" : "5",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "51"
   }, {
     "range" : "6",
     "domain" : "48",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "52"
   }, {
     "range" : "6",
     "domain" : "49",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "53"
   }, {
     "range" : "8",
     "domain" : "55",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "54"
   }, {
     "range" : "8",
     "domain" : "46",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "56"
   }, {
     "range" : "8",
     "domain" : "57",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "58"
   }, {
     "range" : "8",
     "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "59"
   }, {
     "range" : "47",
     "domain" : "45",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "60"
   }, {
     "iri" : "http://schema.org/result",

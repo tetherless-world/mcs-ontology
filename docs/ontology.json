@@ -14,7 +14,7 @@
     "@value" : "2020-06-22"
   } ],
   "http://schema.org/description" : [ {
-    "@value" : "The main goal in commonsense reasoning is to improve score against specific commonsense question-answering benchmarks. In this context, there exists leaderboards that act as a hub for hosting benchmarks and allowing systems submissions that try to improve the score. These benchmarks vary in structure. Some provide questions and answer choices, while others may require systems to reason over observations and provide explanations by the choice of a most appropriate hypothesis. This is an ontology that provide a common vocabulary for annotating datasets that compose commonsense reasoning benchmarks, as well as submissions, and systems. Its goal is to allow diverse benchmarks to be compared, integrated and also support the analysis of systems and machine-learning models."
+    "@value" : "The main goal in commonsense reasoning is to improve score against specific commonsense question-answering benchmarks. In this context, there exist leaderboards that act as a hub for hosting benchmarks and allowing systems submissions that try to improve the score. These benchmarks vary in structure. Some provide questions and answer choices, while others may require systems to reason over observations and provide explanations by the choice of the most appropriate hypothesis. This is an ontology that provides a common vocabulary for annotating datasets that compose commonsense reasoning benchmarks, as well as submissions, and systems. Its goal is to allow diverse benchmarks to be compared, integrated, and also support the analysis of systems and machine-learning models."
   } ],
   "http://schema.org/name" : [ {
     "@value" : "MCS Ontology"
@@ -48,7 +48,7 @@
     "@value" : "Text of a benchmark answer choice."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Benchmark Answer"
+    "@value" : "BenchmarkAnswer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/twc/mcs/BenchmarkChoice"
@@ -60,7 +60,7 @@
     "@value" : "A list of elements that compose a benchmark sample."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Benchmark Antecedent"
+    "@value" : "BenchmarkAntecedent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://schema.org/ItemList"
@@ -72,7 +72,7 @@
     "@value" : "A possible choice for a benchmark sample."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Benchmark Choice"
+    "@value" : "BenchmarkChoice"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://schema.org/ListItem"
@@ -84,7 +84,7 @@
     "@value" : "List of possible choices in a benchmark sample."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Benchmark Choices"
+    "@value" : "BenchmarkChoices"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://schema.org/ItemList"
@@ -96,7 +96,7 @@
     "@value" : "The ConceptNet concept which the question of created from (i.e. electricity)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Benchmark Concept"
+    "@value" : "BenchmarkConcept"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://schema.org/ListItem"
@@ -108,7 +108,7 @@
     "@value" : "Context text about the question."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Benchmark Context"
+    "@value" : "BenchmarkContext"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://schema.org/ListItem"
@@ -120,7 +120,7 @@
     "@value" : "A file containing questions/answers of a QA benchmark."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Benchmark Dataset"
+    "@value" : "BenchmarkDataset"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://schema.org/Dataset"
@@ -132,7 +132,7 @@
     "@value" : "A dataset containing dev questions/asnwers of a QA bechmark."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Benchmark DevDataset"
+    "@value" : "BenchmarkDevDataset"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/twc/mcs/BenchmarkDataset"
@@ -144,7 +144,7 @@
     "@value" : "Text of a benchmark goal."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Benchmark Goal"
+    "@value" : "BenchmarkGoal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://schema.org/ListItem"
@@ -156,7 +156,7 @@
     "@value" : "Text of a benchmark hypothesis choice."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Benchmark Hypothesis"
+    "@value" : "BenchmarkHypothesis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/twc/mcs/BenchmarkChoice"
@@ -168,7 +168,7 @@
     "@value" : "Narrative text for an observation."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Benchmark Observation"
+    "@value" : "BenchmarkObservation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://schema.org/ListItem"
@@ -180,7 +180,7 @@
     "@value" : "Text of a benchmark question."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Benchmark Question"
+    "@value" : "BenchmarkQuestion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://schema.org/ListItem"
@@ -192,7 +192,7 @@
     "@value" : "The category of a benchmark question (i.e. temporal reasoming, temporal sequences ...)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Benchmark Question Category"
+    "@value" : "BenchmarkQuestionCategory"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://schema.org/ListItem"
@@ -204,7 +204,7 @@
     "@value" : "The type of a benchmark question (i.e. multiple choice, true/false)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Benchmark Question Type"
+    "@value" : "BenchmarkQuestionType"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://schema.org/ListItem"
@@ -216,7 +216,7 @@
     "@value" : "An entry in a benchmark dataset (e.g. questions, observations, goals ...)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Benchmark Sample"
+    "@value" : "BenchmarkSample"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://schema.org/CreativeWork"
@@ -228,7 +228,7 @@
     "@value" : "Text of a benchmark solution choice."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Benchmark Solution"
+    "@value" : "BenchmarkSolution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/twc/mcs/BenchmarkChoice"
@@ -240,7 +240,7 @@
     "@value" : "A dataset containing test questions of a QA bechmark."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Benchmark TestDataset"
+    "@value" : "BenchmarkTestDataset"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/twc/mcs/BenchmarkDataset"
@@ -252,7 +252,7 @@
     "@value" : "A dataset containing training questions/asnwers of a QA bechmark."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Benchmark TrainingDataset"
+    "@value" : "BenchmarkTrainingDataset"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/twc/mcs/BenchmarkDataset"
@@ -288,7 +288,7 @@
     "@value" : "An entry in a submission dataset (i.e. a prediction)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Submission Sample"
+    "@value" : "SubmissionSample"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://schema.org/CreativeWork"

@@ -15,7 +15,7 @@
         <vann:preferredNamespaceUri>http://purl.org/twc/mcs/</vann:preferredNamespaceUri>
         <schema:creator>Henrique O. Santos</schema:creator>
         <schema:dateCreated>2020-06-22</schema:dateCreated>
-        <schema:description>The main goal in commonsense reasoning is to improve score against specific commonsense question-answering benchmarks. In this context, there exists leaderboards that act as a hub for hosting benchmarks and allowing systems submissions that try to improve the score. These benchmarks vary in structure. Some provide questions and answer choices, while others may require systems to reason over observations and provide explanations by the choice of a most appropriate hypothesis. This is an ontology that provide a common vocabulary for annotating datasets that compose commonsense reasoning benchmarks, as well as submissions, and systems. Its goal is to allow diverse benchmarks to be compared, integrated and also support the analysis of systems and machine-learning models.</schema:description>
+        <schema:description>The main goal in commonsense reasoning is to improve score against specific commonsense question-answering benchmarks. In this context, there exist leaderboards that act as a hub for hosting benchmarks and allowing systems submissions that try to improve the score. These benchmarks vary in structure. Some provide questions and answer choices, while others may require systems to reason over observations and provide explanations by the choice of the most appropriate hypothesis. This is an ontology that provides a common vocabulary for annotating datasets that compose commonsense reasoning benchmarks, as well as submissions, and systems. Its goal is to allow diverse benchmarks to be compared, integrated, and also support the analysis of systems and machine-learning models.</schema:description>
         <schema:name>MCS Ontology</schema:name>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</owl:versionInfo>
     </owl:Ontology>
@@ -183,7 +183,7 @@
     <owl:Class rdf:about="http://purl.org/twc/mcs/BenchmarkAnswer">
         <rdfs:subClassOf rdf:resource="http://purl.org/twc/mcs/BenchmarkChoice"/>
         <rdfs:comment>Text of a benchmark answer choice.</rdfs:comment>
-        <rdfs:label>Benchmark Answer</rdfs:label>
+        <rdfs:label>BenchmarkAnswer</rdfs:label>
     </owl:Class>
     
 
@@ -194,7 +194,7 @@
     <owl:Class rdf:about="http://purl.org/twc/mcs/BenchmarkAntecedent">
         <rdfs:subClassOf rdf:resource="http://schema.org/ItemList"/>
         <rdfs:comment>A list of elements that compose a benchmark sample.</rdfs:comment>
-        <rdfs:label>Benchmark Antecedent</rdfs:label>
+        <rdfs:label>BenchmarkAntecedent</rdfs:label>
     </owl:Class>
     
 
@@ -205,7 +205,7 @@
     <owl:Class rdf:about="http://purl.org/twc/mcs/BenchmarkChoice">
         <rdfs:subClassOf rdf:resource="http://schema.org/ListItem"/>
         <rdfs:comment>A possible choice for a benchmark sample.</rdfs:comment>
-        <rdfs:label>Benchmark Choice</rdfs:label>
+        <rdfs:label>BenchmarkChoice</rdfs:label>
     </owl:Class>
     
 
@@ -216,7 +216,7 @@
     <owl:Class rdf:about="http://purl.org/twc/mcs/BenchmarkChoices">
         <rdfs:subClassOf rdf:resource="http://schema.org/ItemList"/>
         <rdfs:comment>List of possible choices in a benchmark sample.</rdfs:comment>
-        <rdfs:label>Benchmark Choices</rdfs:label>
+        <rdfs:label>BenchmarkChoices</rdfs:label>
     </owl:Class>
     
 
@@ -227,7 +227,7 @@
     <owl:Class rdf:about="http://purl.org/twc/mcs/BenchmarkConcept">
         <rdfs:subClassOf rdf:resource="http://schema.org/ListItem"/>
         <rdfs:comment>The ConceptNet concept which the question of created from (i.e. electricity).</rdfs:comment>
-        <rdfs:label>Benchmark Concept</rdfs:label>
+        <rdfs:label>BenchmarkConcept</rdfs:label>
     </owl:Class>
     
 
@@ -238,7 +238,7 @@
     <owl:Class rdf:about="http://purl.org/twc/mcs/BenchmarkContext">
         <rdfs:subClassOf rdf:resource="http://schema.org/ListItem"/>
         <rdfs:comment>Context text about the question.</rdfs:comment>
-        <rdfs:label>Benchmark Context</rdfs:label>
+        <rdfs:label>BenchmarkContext</rdfs:label>
     </owl:Class>
     
 
@@ -249,7 +249,7 @@
     <owl:Class rdf:about="http://purl.org/twc/mcs/BenchmarkDataset">
         <rdfs:subClassOf rdf:resource="http://schema.org/Dataset"/>
         <rdfs:comment>A file containing questions/answers of a QA benchmark.</rdfs:comment>
-        <rdfs:label>Benchmark Dataset</rdfs:label>
+        <rdfs:label>BenchmarkDataset</rdfs:label>
     </owl:Class>
     
 
@@ -260,7 +260,7 @@
     <owl:Class rdf:about="http://purl.org/twc/mcs/BenchmarkDevDataset">
         <rdfs:subClassOf rdf:resource="http://purl.org/twc/mcs/BenchmarkDataset"/>
         <rdfs:comment>A dataset containing dev questions/asnwers of a QA bechmark.</rdfs:comment>
-        <rdfs:label>Benchmark DevDataset</rdfs:label>
+        <rdfs:label>BenchmarkDevDataset</rdfs:label>
     </owl:Class>
     
 
@@ -271,7 +271,7 @@
     <owl:Class rdf:about="http://purl.org/twc/mcs/BenchmarkGoal">
         <rdfs:subClassOf rdf:resource="http://schema.org/ListItem"/>
         <rdfs:comment>Text of a benchmark goal.</rdfs:comment>
-        <rdfs:label>Benchmark Goal</rdfs:label>
+        <rdfs:label>BenchmarkGoal</rdfs:label>
     </owl:Class>
     
 
@@ -282,7 +282,7 @@
     <owl:Class rdf:about="http://purl.org/twc/mcs/BenchmarkHypothesis">
         <rdfs:subClassOf rdf:resource="http://purl.org/twc/mcs/BenchmarkChoice"/>
         <rdfs:comment>Text of a benchmark hypothesis choice.</rdfs:comment>
-        <rdfs:label>Benchmark Hypothesis</rdfs:label>
+        <rdfs:label>BenchmarkHypothesis</rdfs:label>
     </owl:Class>
     
 
@@ -293,7 +293,7 @@
     <owl:Class rdf:about="http://purl.org/twc/mcs/BenchmarkObservation">
         <rdfs:subClassOf rdf:resource="http://schema.org/ListItem"/>
         <rdfs:comment>Narrative text for an observation.</rdfs:comment>
-        <rdfs:label>Benchmark Observation</rdfs:label>
+        <rdfs:label>BenchmarkObservation</rdfs:label>
     </owl:Class>
     
 
@@ -304,7 +304,7 @@
     <owl:Class rdf:about="http://purl.org/twc/mcs/BenchmarkQuestion">
         <rdfs:subClassOf rdf:resource="http://schema.org/ListItem"/>
         <rdfs:comment>Text of a benchmark question.</rdfs:comment>
-        <rdfs:label>Benchmark Question</rdfs:label>
+        <rdfs:label>BenchmarkQuestion</rdfs:label>
     </owl:Class>
     
 
@@ -315,7 +315,7 @@
     <owl:Class rdf:about="http://purl.org/twc/mcs/BenchmarkQuestionCategory">
         <rdfs:subClassOf rdf:resource="http://schema.org/ListItem"/>
         <rdfs:comment>The category of a benchmark question (i.e. temporal reasoming, temporal sequences ...)</rdfs:comment>
-        <rdfs:label>Benchmark Question Category</rdfs:label>
+        <rdfs:label>BenchmarkQuestionCategory</rdfs:label>
     </owl:Class>
     
 
@@ -326,7 +326,7 @@
     <owl:Class rdf:about="http://purl.org/twc/mcs/BenchmarkQuestionType">
         <rdfs:subClassOf rdf:resource="http://schema.org/ListItem"/>
         <rdfs:comment>The type of a benchmark question (i.e. multiple choice, true/false).</rdfs:comment>
-        <rdfs:label>Benchmark Question Type</rdfs:label>
+        <rdfs:label>BenchmarkQuestionType</rdfs:label>
     </owl:Class>
     
 
@@ -337,7 +337,7 @@
     <owl:Class rdf:about="http://purl.org/twc/mcs/BenchmarkSample">
         <rdfs:subClassOf rdf:resource="http://schema.org/CreativeWork"/>
         <rdfs:comment>An entry in a benchmark dataset (e.g. questions, observations, goals ...)</rdfs:comment>
-        <rdfs:label>Benchmark Sample</rdfs:label>
+        <rdfs:label>BenchmarkSample</rdfs:label>
     </owl:Class>
     
 
@@ -348,7 +348,7 @@
     <owl:Class rdf:about="http://purl.org/twc/mcs/BenchmarkSolution">
         <rdfs:subClassOf rdf:resource="http://purl.org/twc/mcs/BenchmarkChoice"/>
         <rdfs:comment>Text of a benchmark solution choice.</rdfs:comment>
-        <rdfs:label>Benchmark Solution</rdfs:label>
+        <rdfs:label>BenchmarkSolution</rdfs:label>
     </owl:Class>
     
 
@@ -359,7 +359,7 @@
     <owl:Class rdf:about="http://purl.org/twc/mcs/BenchmarkTestDataset">
         <rdfs:subClassOf rdf:resource="http://purl.org/twc/mcs/BenchmarkDataset"/>
         <rdfs:comment>A dataset containing test questions of a QA bechmark.</rdfs:comment>
-        <rdfs:label>Benchmark TestDataset</rdfs:label>
+        <rdfs:label>BenchmarkTestDataset</rdfs:label>
     </owl:Class>
     
 
@@ -370,7 +370,7 @@
     <owl:Class rdf:about="http://purl.org/twc/mcs/BenchmarkTrainingDataset">
         <rdfs:subClassOf rdf:resource="http://purl.org/twc/mcs/BenchmarkDataset"/>
         <rdfs:comment>A dataset containing training questions/asnwers of a QA bechmark.</rdfs:comment>
-        <rdfs:label>Benchmark TrainingDataset</rdfs:label>
+        <rdfs:label>BenchmarkTrainingDataset</rdfs:label>
     </owl:Class>
     
 
@@ -403,7 +403,7 @@
     <owl:Class rdf:about="http://purl.org/twc/mcs/SubmissionSample">
         <rdfs:subClassOf rdf:resource="http://schema.org/CreativeWork"/>
         <rdfs:comment>An entry in a submission dataset (i.e. a prediction).</rdfs:comment>
-        <rdfs:label>Submission Sample</rdfs:label>
+        <rdfs:label>SubmissionSample</rdfs:label>
     </owl:Class>
     
 
