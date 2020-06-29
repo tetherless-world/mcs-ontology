@@ -17,7 +17,7 @@
     "@value" : "The main goal in commonsense reasoning is to improve the score of systems/models against specific commonsense question-answering benchmarks. In this context, leaderboards exist to act as hubs for hosting benchmarks and allowing systems' submissions that try to improve the score. These benchmarks vary in structure. Some provide questions and answer choices, while others may provide factual observations and require reasoners to choose the most appropriate hypothesis to explain them. This is an ontology that provides a common vocabulary for annotating datasets that compose commonsense reasoning benchmarks, as well as submissions, and systems. Its goal is to allow diverse benchmarks to be compared, integrated, and also support the analysis of systems and machine-learning models."
   } ],
   "http://schema.org/name" : [ {
-    "@value" : "MCS Ontology"
+    "@value" : "Commonsense Benchmark Ontology"
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
     "@id" : "http://schema.org/"
@@ -33,7 +33,7 @@
   "@id" : "http://purl.org/twc/mcs/Benchmark",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A collection of datasets composing a QA benchmark."
+    "@value" : "A collection of datasets composing a benchmark."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Benchmark"
@@ -45,7 +45,7 @@
   "@id" : "http://purl.org/twc/mcs/BenchmarkAnswer",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Text of a benchmark answer choice."
+    "@value" : "A benchmark answer choice."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "BenchmarkAnswer"
@@ -93,7 +93,7 @@
   "@id" : "http://purl.org/twc/mcs/BenchmarkConcept",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The ConceptNet concept which the question of created from (i.e. electricity)."
+    "@value" : "The ConceptNet concept which the question was created from (i.e. electricity)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "BenchmarkConcept"
@@ -105,7 +105,7 @@
   "@id" : "http://purl.org/twc/mcs/BenchmarkContext",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Context text about the question."
+    "@value" : "Context element of a benchmark sample."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "BenchmarkContext"
@@ -117,7 +117,7 @@
   "@id" : "http://purl.org/twc/mcs/BenchmarkDataset",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A file containing questions/answers of a QA benchmark."
+    "@value" : "A file containing elements (questions, answers, context, observations, ...) of a benchmark."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "BenchmarkDataset"
@@ -129,7 +129,7 @@
   "@id" : "http://purl.org/twc/mcs/BenchmarkDevDataset",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A dataset containing dev questions/asnwers of a QA bechmark."
+    "@value" : "A dataset containing dev samples of a bechmark."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "BenchmarkDevDataset"
@@ -141,7 +141,7 @@
   "@id" : "http://purl.org/twc/mcs/BenchmarkGoal",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Text of a benchmark goal."
+    "@value" : "A benchmark's sample goal element."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "BenchmarkGoal"
@@ -153,7 +153,7 @@
   "@id" : "http://purl.org/twc/mcs/BenchmarkHypothesis",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Text of a benchmark hypothesis choice."
+    "@value" : "A benchmark's sample hypothesis choice."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "BenchmarkHypothesis"
@@ -165,7 +165,7 @@
   "@id" : "http://purl.org/twc/mcs/BenchmarkObservation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Narrative text for an observation."
+    "@value" : "A benchmark's sample observation element."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "BenchmarkObservation"
@@ -177,7 +177,7 @@
   "@id" : "http://purl.org/twc/mcs/BenchmarkQuestion",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Text of a benchmark question."
+    "@value" : "A benchmark's sample question element."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "BenchmarkQuestion"
@@ -189,7 +189,7 @@
   "@id" : "http://purl.org/twc/mcs/BenchmarkQuestionCategory",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The category of a benchmark question (i.e. temporal reasoming, temporal sequences ...)"
+    "@value" : "The category of a benchmark sample (i.e. temporal reasoming, temporal sequences ...)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "BenchmarkQuestionCategory"
@@ -201,7 +201,7 @@
   "@id" : "http://purl.org/twc/mcs/BenchmarkQuestionType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The type of a benchmark question (i.e. multiple choice, true/false)."
+    "@value" : "The type of a benchmark sample (i.e. multiple choice, true/false)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "BenchmarkQuestionType"
@@ -213,7 +213,7 @@
   "@id" : "http://purl.org/twc/mcs/BenchmarkSample",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "An entry in a benchmark dataset (e.g. questions, observations, goals ...)"
+    "@value" : "An entry in a benchmark dataset."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "BenchmarkSample"
@@ -225,7 +225,7 @@
   "@id" : "http://purl.org/twc/mcs/BenchmarkSolution",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Text of a benchmark solution choice."
+    "@value" : "A benchmark's sample solution choice."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "BenchmarkSolution"
@@ -237,7 +237,7 @@
   "@id" : "http://purl.org/twc/mcs/BenchmarkTestDataset",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A dataset containing test questions of a QA bechmark."
+    "@value" : "A dataset containing test samples of a bechmark."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "BenchmarkTestDataset"
@@ -249,7 +249,7 @@
   "@id" : "http://purl.org/twc/mcs/BenchmarkTrainingDataset",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A dataset containing training questions/asnwers of a QA bechmark."
+    "@value" : "A dataset containing training samples of a bechmark."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "BenchmarkTrainingDataset"
@@ -261,7 +261,7 @@
   "@id" : "http://purl.org/twc/mcs/DevScore",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Score of correct predictions agains a dev benchmark dataset."
+    "@value" : "Score of a system's correct predictions against a dev benchmark dataset."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "DevScore"
@@ -273,7 +273,7 @@
   "@id" : "http://purl.org/twc/mcs/Submission",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A submission dataset from a QA system with prediction choices for a benchmark."
+    "@value" : "A submission dataset from a system/model with prediction choices for a benchmark."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Submission"
@@ -297,7 +297,7 @@
   "@id" : "http://purl.org/twc/mcs/TestScore",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Score of correct predictions agains a test benchmark dataset."
+    "@value" : "Score of a system's correct predictions against a test benchmark dataset."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "TestScore"
@@ -327,7 +327,7 @@
   "@id" : "http://purl.org/twc/mcs/choices",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Indicates a list of benchmark choices that is part of this benchmark sample."
+    "@value" : "Indicates a list of choices that is part of this benchmark sample."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/twc/mcs/BenchmarkSample"

@@ -16,7 +16,7 @@
         <schema:creator>Henrique O. Santos</schema:creator>
         <schema:dateCreated>2020-06-22</schema:dateCreated>
         <schema:description>The main goal in commonsense reasoning is to improve the score of systems/models against specific commonsense question-answering benchmarks. In this context, leaderboards exist to act as hubs for hosting benchmarks and allowing systems&apos; submissions that try to improve the score. These benchmarks vary in structure. Some provide questions and answer choices, while others may provide factual observations and require reasoners to choose the most appropriate hypothesis to explain them. This is an ontology that provides a common vocabulary for annotating datasets that compose commonsense reasoning benchmarks, as well as submissions, and systems. Its goal is to allow diverse benchmarks to be compared, integrated, and also support the analysis of systems and machine-learning models.</schema:description>
-        <schema:name>MCS Ontology</schema:name>
+        <schema:name>Commonsense Benchmark Ontology</schema:name>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</owl:versionInfo>
     </owl:Ontology>
     
@@ -108,7 +108,7 @@
         <rdfs:subPropertyOf rdf:resource="http://schema.org/hasPart"/>
         <rdfs:domain rdf:resource="http://purl.org/twc/mcs/BenchmarkSample"/>
         <rdfs:range rdf:resource="http://purl.org/twc/mcs/BenchmarkChoices"/>
-        <rdfs:comment>Indicates a list of benchmark choices that is part of this benchmark sample.</rdfs:comment>
+        <rdfs:comment>Indicates a list of choices that is part of this benchmark sample.</rdfs:comment>
         <rdfs:label>choices</rdfs:label>
     </owl:ObjectProperty>
     
@@ -171,7 +171,7 @@
 
     <owl:Class rdf:about="http://purl.org/twc/mcs/Benchmark">
         <rdfs:subClassOf rdf:resource="http://schema.org/DataCatalog"/>
-        <rdfs:comment>A collection of datasets composing a QA benchmark.</rdfs:comment>
+        <rdfs:comment>A collection of datasets composing a benchmark.</rdfs:comment>
         <rdfs:label>Benchmark</rdfs:label>
     </owl:Class>
     
@@ -182,7 +182,7 @@
 
     <owl:Class rdf:about="http://purl.org/twc/mcs/BenchmarkAnswer">
         <rdfs:subClassOf rdf:resource="http://purl.org/twc/mcs/BenchmarkChoice"/>
-        <rdfs:comment>Text of a benchmark answer choice.</rdfs:comment>
+        <rdfs:comment>A benchmark answer choice.</rdfs:comment>
         <rdfs:label>BenchmarkAnswer</rdfs:label>
     </owl:Class>
     
@@ -226,7 +226,7 @@
 
     <owl:Class rdf:about="http://purl.org/twc/mcs/BenchmarkConcept">
         <rdfs:subClassOf rdf:resource="http://schema.org/ListItem"/>
-        <rdfs:comment>The ConceptNet concept which the question of created from (i.e. electricity).</rdfs:comment>
+        <rdfs:comment>The ConceptNet concept which the question was created from (i.e. electricity).</rdfs:comment>
         <rdfs:label>BenchmarkConcept</rdfs:label>
     </owl:Class>
     
@@ -237,7 +237,7 @@
 
     <owl:Class rdf:about="http://purl.org/twc/mcs/BenchmarkContext">
         <rdfs:subClassOf rdf:resource="http://schema.org/ListItem"/>
-        <rdfs:comment>Context text about the question.</rdfs:comment>
+        <rdfs:comment>Context element of a benchmark sample.</rdfs:comment>
         <rdfs:label>BenchmarkContext</rdfs:label>
     </owl:Class>
     
@@ -248,7 +248,7 @@
 
     <owl:Class rdf:about="http://purl.org/twc/mcs/BenchmarkDataset">
         <rdfs:subClassOf rdf:resource="http://schema.org/Dataset"/>
-        <rdfs:comment>A file containing questions/answers of a QA benchmark.</rdfs:comment>
+        <rdfs:comment>A file containing elements (questions, answers, context, observations, ...) of a benchmark.</rdfs:comment>
         <rdfs:label>BenchmarkDataset</rdfs:label>
     </owl:Class>
     
@@ -259,7 +259,7 @@
 
     <owl:Class rdf:about="http://purl.org/twc/mcs/BenchmarkDevDataset">
         <rdfs:subClassOf rdf:resource="http://purl.org/twc/mcs/BenchmarkDataset"/>
-        <rdfs:comment>A dataset containing dev questions/asnwers of a QA bechmark.</rdfs:comment>
+        <rdfs:comment>A dataset containing dev samples of a bechmark.</rdfs:comment>
         <rdfs:label>BenchmarkDevDataset</rdfs:label>
     </owl:Class>
     
@@ -270,7 +270,7 @@
 
     <owl:Class rdf:about="http://purl.org/twc/mcs/BenchmarkGoal">
         <rdfs:subClassOf rdf:resource="http://schema.org/ListItem"/>
-        <rdfs:comment>Text of a benchmark goal.</rdfs:comment>
+        <rdfs:comment>A benchmark&apos;s sample goal element.</rdfs:comment>
         <rdfs:label>BenchmarkGoal</rdfs:label>
     </owl:Class>
     
@@ -281,7 +281,7 @@
 
     <owl:Class rdf:about="http://purl.org/twc/mcs/BenchmarkHypothesis">
         <rdfs:subClassOf rdf:resource="http://purl.org/twc/mcs/BenchmarkChoice"/>
-        <rdfs:comment>Text of a benchmark hypothesis choice.</rdfs:comment>
+        <rdfs:comment>A benchmark&apos;s sample hypothesis choice.</rdfs:comment>
         <rdfs:label>BenchmarkHypothesis</rdfs:label>
     </owl:Class>
     
@@ -292,7 +292,7 @@
 
     <owl:Class rdf:about="http://purl.org/twc/mcs/BenchmarkObservation">
         <rdfs:subClassOf rdf:resource="http://schema.org/ListItem"/>
-        <rdfs:comment>Narrative text for an observation.</rdfs:comment>
+        <rdfs:comment>A benchmark&apos;s sample observation element.</rdfs:comment>
         <rdfs:label>BenchmarkObservation</rdfs:label>
     </owl:Class>
     
@@ -303,7 +303,7 @@
 
     <owl:Class rdf:about="http://purl.org/twc/mcs/BenchmarkQuestion">
         <rdfs:subClassOf rdf:resource="http://schema.org/ListItem"/>
-        <rdfs:comment>Text of a benchmark question.</rdfs:comment>
+        <rdfs:comment>A benchmark&apos;s sample question element.</rdfs:comment>
         <rdfs:label>BenchmarkQuestion</rdfs:label>
     </owl:Class>
     
@@ -314,7 +314,7 @@
 
     <owl:Class rdf:about="http://purl.org/twc/mcs/BenchmarkQuestionCategory">
         <rdfs:subClassOf rdf:resource="http://schema.org/ListItem"/>
-        <rdfs:comment>The category of a benchmark question (i.e. temporal reasoming, temporal sequences ...)</rdfs:comment>
+        <rdfs:comment>The category of a benchmark sample (i.e. temporal reasoming, temporal sequences ...)</rdfs:comment>
         <rdfs:label>BenchmarkQuestionCategory</rdfs:label>
     </owl:Class>
     
@@ -325,7 +325,7 @@
 
     <owl:Class rdf:about="http://purl.org/twc/mcs/BenchmarkQuestionType">
         <rdfs:subClassOf rdf:resource="http://schema.org/ListItem"/>
-        <rdfs:comment>The type of a benchmark question (i.e. multiple choice, true/false).</rdfs:comment>
+        <rdfs:comment>The type of a benchmark sample (i.e. multiple choice, true/false).</rdfs:comment>
         <rdfs:label>BenchmarkQuestionType</rdfs:label>
     </owl:Class>
     
@@ -336,7 +336,7 @@
 
     <owl:Class rdf:about="http://purl.org/twc/mcs/BenchmarkSample">
         <rdfs:subClassOf rdf:resource="http://schema.org/CreativeWork"/>
-        <rdfs:comment>An entry in a benchmark dataset (e.g. questions, observations, goals ...)</rdfs:comment>
+        <rdfs:comment>An entry in a benchmark dataset.</rdfs:comment>
         <rdfs:label>BenchmarkSample</rdfs:label>
     </owl:Class>
     
@@ -347,7 +347,7 @@
 
     <owl:Class rdf:about="http://purl.org/twc/mcs/BenchmarkSolution">
         <rdfs:subClassOf rdf:resource="http://purl.org/twc/mcs/BenchmarkChoice"/>
-        <rdfs:comment>Text of a benchmark solution choice.</rdfs:comment>
+        <rdfs:comment>A benchmark&apos;s sample solution choice.</rdfs:comment>
         <rdfs:label>BenchmarkSolution</rdfs:label>
     </owl:Class>
     
@@ -358,7 +358,7 @@
 
     <owl:Class rdf:about="http://purl.org/twc/mcs/BenchmarkTestDataset">
         <rdfs:subClassOf rdf:resource="http://purl.org/twc/mcs/BenchmarkDataset"/>
-        <rdfs:comment>A dataset containing test questions of a QA bechmark.</rdfs:comment>
+        <rdfs:comment>A dataset containing test samples of a bechmark.</rdfs:comment>
         <rdfs:label>BenchmarkTestDataset</rdfs:label>
     </owl:Class>
     
@@ -369,7 +369,7 @@
 
     <owl:Class rdf:about="http://purl.org/twc/mcs/BenchmarkTrainingDataset">
         <rdfs:subClassOf rdf:resource="http://purl.org/twc/mcs/BenchmarkDataset"/>
-        <rdfs:comment>A dataset containing training questions/asnwers of a QA bechmark.</rdfs:comment>
+        <rdfs:comment>A dataset containing training samples of a bechmark.</rdfs:comment>
         <rdfs:label>BenchmarkTrainingDataset</rdfs:label>
     </owl:Class>
     
@@ -380,7 +380,7 @@
 
     <owl:Class rdf:about="http://purl.org/twc/mcs/DevScore">
         <rdfs:subClassOf rdf:resource="http://schema.org/Rating"/>
-        <rdfs:comment>Score of correct predictions agains a dev benchmark dataset.</rdfs:comment>
+        <rdfs:comment>Score of a system&apos;s correct predictions against a dev benchmark dataset.</rdfs:comment>
         <rdfs:label>DevScore</rdfs:label>
     </owl:Class>
     
@@ -391,7 +391,7 @@
 
     <owl:Class rdf:about="http://purl.org/twc/mcs/Submission">
         <rdfs:subClassOf rdf:resource="http://schema.org/Dataset"/>
-        <rdfs:comment>A submission dataset from a QA system with prediction choices for a benchmark.</rdfs:comment>
+        <rdfs:comment>A submission dataset from a system/model with prediction choices for a benchmark.</rdfs:comment>
         <rdfs:label>Submission</rdfs:label>
     </owl:Class>
     
@@ -413,7 +413,7 @@
 
     <owl:Class rdf:about="http://purl.org/twc/mcs/TestScore">
         <rdfs:subClassOf rdf:resource="http://schema.org/Rating"/>
-        <rdfs:comment>Score of correct predictions agains a test benchmark dataset.</rdfs:comment>
+        <rdfs:comment>Score of a system&apos;s correct predictions against a test benchmark dataset.</rdfs:comment>
         <rdfs:label>TestScore</rdfs:label>
     </owl:Class>
     

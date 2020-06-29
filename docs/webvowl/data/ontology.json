@@ -31,19 +31,19 @@
       "name" : [ {
         "identifier" : "name",
         "language" : "undefined",
-        "value" : "MCS Ontology",
-        "type" : "label"
-      } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
-        "language" : "undefined",
-        "value" : "0.1",
+        "value" : "Commonsense Benchmark Ontology",
         "type" : "label"
       } ],
       "preferredNamespaceUri" : [ {
         "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
         "value" : "http://purl.org/twc/mcs/",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1",
         "type" : "label"
       } ]
     }
@@ -83,10 +83,10 @@
     "id" : "48",
     "type" : "owl:Class"
   }, {
-    "id" : "16",
+    "id" : "8",
     "type" : "owl:Class"
   }, {
-    "id" : "8",
+    "id" : "16",
     "type" : "owl:Class"
   }, {
     "id" : "35",
@@ -107,10 +107,10 @@
     "id" : "49",
     "type" : "owl:Class"
   }, {
-    "id" : "39",
+    "id" : "45",
     "type" : "owl:Class"
   }, {
-    "id" : "45",
+    "id" : "39",
     "type" : "owl:Class"
   }, {
     "id" : "23",
@@ -122,16 +122,16 @@
     "id" : "10",
     "type" : "owl:Class"
   }, {
-    "id" : "27",
-    "type" : "owl:Class"
-  }, {
     "id" : "43",
     "type" : "owl:Class"
   }, {
-    "id" : "57",
+    "id" : "27",
     "type" : "owl:Class"
   }, {
     "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
     "type" : "owl:Class"
   }, {
     "id" : "24",
@@ -155,7 +155,7 @@
       "undefined" : "BenchmarkTestDataset"
     },
     "comment" : {
-      "undefined" : "A dataset containing test questions of a QA bechmark."
+      "undefined" : "A dataset containing test samples of a bechmark."
     },
     "id" : "5",
     "superClasses" : [ "6" ]
@@ -168,7 +168,7 @@
       "undefined" : "BenchmarkConcept"
     },
     "comment" : {
-      "undefined" : "The ConceptNet concept which the question of created from (i.e. electricity)."
+      "undefined" : "The ConceptNet concept which the question was created from (i.e. electricity)."
     },
     "id" : "7",
     "superClasses" : [ "8" ]
@@ -200,7 +200,7 @@
       "undefined" : "Benchmark"
     },
     "comment" : {
-      "undefined" : "A collection of datasets composing a QA benchmark."
+      "undefined" : "A collection of datasets composing a benchmark."
     },
     "id" : "14",
     "superClasses" : [ "13" ]
@@ -225,19 +225,6 @@
     "attributes" : [ "external" ],
     "id" : "17"
   }, {
-    "iri" : "http://purl.org/twc/mcs/BenchmarkQuestionType",
-    "baseIri" : "http://purl.org/twc/mcs",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "BenchmarkQuestionType",
-      "undefined" : "BenchmarkQuestionType"
-    },
-    "comment" : {
-      "undefined" : "The type of a benchmark question (i.e. multiple choice, true/false)."
-    },
-    "id" : "46",
-    "superClasses" : [ "8" ]
-  }, {
     "iri" : "http://schema.org/ItemList",
     "baseIri" : "http://schema.org",
     "instances" : 0,
@@ -246,7 +233,20 @@
     },
     "subClasses" : [ "45", "24" ],
     "attributes" : [ "external" ],
-    "id" : "47"
+    "id" : "46"
+  }, {
+    "iri" : "http://purl.org/twc/mcs/BenchmarkQuestionType",
+    "baseIri" : "http://purl.org/twc/mcs",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BenchmarkQuestionType",
+      "undefined" : "BenchmarkQuestionType"
+    },
+    "comment" : {
+      "undefined" : "The type of a benchmark sample (i.e. multiple choice, true/false)."
+    },
+    "id" : "47",
+    "superClasses" : [ "8" ]
   }, {
     "iri" : "http://purl.org/twc/mcs/BenchmarkDataset",
     "baseIri" : "http://purl.org/twc/mcs",
@@ -257,7 +257,7 @@
     },
     "subClasses" : [ "5", "48", "49" ],
     "comment" : {
-      "undefined" : "A file containing questions/answers of a QA benchmark."
+      "undefined" : "A file containing elements (questions, answers, context, observations, ...) of a benchmark."
     },
     "id" : "6",
     "superClasses" : [ "21" ]
@@ -270,10 +270,20 @@
       "undefined" : "BenchmarkDevDataset"
     },
     "comment" : {
-      "undefined" : "A dataset containing dev questions/asnwers of a QA bechmark."
+      "undefined" : "A dataset containing dev samples of a bechmark."
     },
     "id" : "48",
     "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://schema.org/ListItem",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ListItem"
+    },
+    "subClasses" : [ "55", "47", "57", "7", "41", "31", "43", "35" ],
+    "attributes" : [ "external" ],
+    "id" : "8"
   }, {
     "iri" : "http://purl.org/twc/mcs/SubmissionSample",
     "baseIri" : "http://purl.org/twc/mcs",
@@ -288,16 +298,6 @@
     "id" : "16",
     "superClasses" : [ "17" ]
   }, {
-    "iri" : "http://schema.org/ListItem",
-    "baseIri" : "http://schema.org",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ListItem"
-    },
-    "subClasses" : [ "55", "46", "57", "7", "41", "31", "43", "35" ],
-    "attributes" : [ "external" ],
-    "id" : "8"
-  }, {
     "iri" : "http://purl.org/twc/mcs/BenchmarkContext",
     "baseIri" : "http://purl.org/twc/mcs",
     "instances" : 0,
@@ -306,7 +306,7 @@
       "undefined" : "BenchmarkContext"
     },
     "comment" : {
-      "undefined" : "Context text about the question."
+      "undefined" : "Context element of a benchmark sample."
     },
     "id" : "35",
     "superClasses" : [ "8" ]
@@ -319,7 +319,7 @@
       "undefined" : "BenchmarkGoal"
     },
     "comment" : {
-      "undefined" : "Text of a benchmark goal."
+      "undefined" : "A benchmark's sample goal element."
     },
     "id" : "55",
     "superClasses" : [ "8" ]
@@ -332,7 +332,7 @@
       "undefined" : "BenchmarkSample"
     },
     "comment" : {
-      "undefined" : "An entry in a benchmark dataset (e.g. questions, observations, goals ...)"
+      "undefined" : "An entry in a benchmark dataset."
     },
     "id" : "19",
     "superClasses" : [ "17" ]
@@ -366,23 +366,10 @@
       "undefined" : "BenchmarkTrainingDataset"
     },
     "comment" : {
-      "undefined" : "A dataset containing training questions/asnwers of a QA bechmark."
+      "undefined" : "A dataset containing training samples of a bechmark."
     },
     "id" : "49",
     "superClasses" : [ "6" ]
-  }, {
-    "iri" : "http://purl.org/twc/mcs/BenchmarkAnswer",
-    "baseIri" : "http://purl.org/twc/mcs",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "BenchmarkAnswer",
-      "undefined" : "BenchmarkAnswer"
-    },
-    "comment" : {
-      "undefined" : "Text of a benchmark answer choice."
-    },
-    "id" : "39",
-    "superClasses" : [ "31" ]
   }, {
     "iri" : "http://purl.org/twc/mcs/BenchmarkAntecedent",
     "baseIri" : "http://purl.org/twc/mcs",
@@ -395,7 +382,20 @@
       "undefined" : "A list of elements that compose a benchmark sample."
     },
     "id" : "45",
-    "superClasses" : [ "47" ]
+    "superClasses" : [ "46" ]
+  }, {
+    "iri" : "http://purl.org/twc/mcs/BenchmarkAnswer",
+    "baseIri" : "http://purl.org/twc/mcs",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BenchmarkAnswer",
+      "undefined" : "BenchmarkAnswer"
+    },
+    "comment" : {
+      "undefined" : "A benchmark answer choice."
+    },
+    "id" : "39",
+    "superClasses" : [ "31" ]
   }, {
     "iri" : "http://purl.org/twc/mcs/Submission",
     "baseIri" : "http://purl.org/twc/mcs",
@@ -405,7 +405,7 @@
       "undefined" : "Submission"
     },
     "comment" : {
-      "undefined" : "A submission dataset from a QA system with prediction choices for a benchmark."
+      "undefined" : "A submission dataset from a system/model with prediction choices for a benchmark."
     },
     "id" : "23",
     "superClasses" : [ "21" ]
@@ -418,7 +418,7 @@
       "undefined" : "BenchmarkHypothesis"
     },
     "comment" : {
-      "undefined" : "Text of a benchmark hypothesis choice."
+      "undefined" : "A benchmark's sample hypothesis choice."
     },
     "id" : "30",
     "superClasses" : [ "31" ]
@@ -432,19 +432,6 @@
     "attributes" : [ "external" ],
     "id" : "10"
   }, {
-    "iri" : "http://purl.org/twc/mcs/DevScore",
-    "baseIri" : "http://purl.org/twc/mcs",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "DevScore",
-      "undefined" : "DevScore"
-    },
-    "comment" : {
-      "undefined" : "Score of correct predictions agains a dev benchmark dataset."
-    },
-    "id" : "27",
-    "superClasses" : [ "25" ]
-  }, {
     "iri" : "http://purl.org/twc/mcs/BenchmarkQuestionCategory",
     "baseIri" : "http://purl.org/twc/mcs",
     "instances" : 0,
@@ -453,23 +440,23 @@
       "undefined" : "BenchmarkQuestionCategory"
     },
     "comment" : {
-      "undefined" : "The category of a benchmark question (i.e. temporal reasoming, temporal sequences ...)"
+      "undefined" : "The category of a benchmark sample (i.e. temporal reasoming, temporal sequences ...)"
     },
     "id" : "43",
     "superClasses" : [ "8" ]
   }, {
-    "iri" : "http://purl.org/twc/mcs/BenchmarkQuestion",
+    "iri" : "http://purl.org/twc/mcs/DevScore",
     "baseIri" : "http://purl.org/twc/mcs",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "BenchmarkQuestion",
-      "undefined" : "BenchmarkQuestion"
+      "IRI-based" : "DevScore",
+      "undefined" : "DevScore"
     },
     "comment" : {
-      "undefined" : "Text of a benchmark question."
+      "undefined" : "Score of a system's correct predictions against a dev benchmark dataset."
     },
-    "id" : "57",
-    "superClasses" : [ "8" ]
+    "id" : "27",
+    "superClasses" : [ "25" ]
   }, {
     "iri" : "http://schema.org/Dataset",
     "baseIri" : "http://schema.org",
@@ -480,6 +467,19 @@
     "subClasses" : [ "23", "6" ],
     "attributes" : [ "external" ],
     "id" : "21"
+  }, {
+    "iri" : "http://purl.org/twc/mcs/BenchmarkQuestion",
+    "baseIri" : "http://purl.org/twc/mcs",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BenchmarkQuestion",
+      "undefined" : "BenchmarkQuestion"
+    },
+    "comment" : {
+      "undefined" : "A benchmark's sample question element."
+    },
+    "id" : "57",
+    "superClasses" : [ "8" ]
   }, {
     "iri" : "http://purl.org/twc/mcs/BenchmarkChoices",
     "baseIri" : "http://purl.org/twc/mcs",
@@ -492,7 +492,7 @@
       "undefined" : "List of possible choices in a benchmark sample."
     },
     "id" : "24",
-    "superClasses" : [ "47" ]
+    "superClasses" : [ "46" ]
   }, {
     "iri" : "http://purl.org/twc/mcs/BenchmarkSolution",
     "baseIri" : "http://purl.org/twc/mcs",
@@ -502,7 +502,7 @@
       "undefined" : "BenchmarkSolution"
     },
     "comment" : {
-      "undefined" : "Text of a benchmark solution choice."
+      "undefined" : "A benchmark's sample solution choice."
     },
     "id" : "37",
     "superClasses" : [ "31" ]
@@ -515,7 +515,7 @@
       "undefined" : "BenchmarkObservation"
     },
     "comment" : {
-      "undefined" : "Narrative text for an observation."
+      "undefined" : "A benchmark's sample observation element."
     },
     "id" : "41",
     "superClasses" : [ "8" ]
@@ -528,7 +528,7 @@
       "undefined" : "TestScore"
     },
     "comment" : {
-      "undefined" : "Score of correct predictions agains a test benchmark dataset."
+      "undefined" : "Score of a system's correct predictions against a test benchmark dataset."
     },
     "id" : "26",
     "superClasses" : [ "25" ]
@@ -678,7 +678,7 @@
     "superproperty" : [ "0" ],
     "domain" : "19",
     "comment" : {
-      "undefined" : "Indicates a list of benchmark choices that is part of this benchmark sample."
+      "undefined" : "Indicates a list of choices that is part of this benchmark sample."
     },
     "attributes" : [ "object" ],
     "id" : "4"
@@ -748,7 +748,7 @@
     "attributes" : [ "object" ],
     "id" : "2"
   }, {
-    "range" : "47",
+    "range" : "46",
     "domain" : "24",
     "attributes" : [ "object", "anonymous" ],
     "id" : "50"
@@ -774,7 +774,7 @@
     "id" : "54"
   }, {
     "range" : "8",
-    "domain" : "46",
+    "domain" : "47",
     "attributes" : [ "object", "anonymous" ],
     "id" : "56"
   }, {
@@ -788,7 +788,7 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "59"
   }, {
-    "range" : "47",
+    "range" : "46",
     "domain" : "45",
     "attributes" : [ "object", "anonymous" ],
     "id" : "60"
