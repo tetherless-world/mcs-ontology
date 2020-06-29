@@ -14,7 +14,7 @@
     "@value" : "2020-06-22"
   } ],
   "http://schema.org/description" : [ {
-    "@value" : "The main goal in commonsense reasoning is to improve score against specific commonsense question-answering benchmarks. In this context, there exist leaderboards that act as a hub for hosting benchmarks and allowing systems submissions that try to improve the score. These benchmarks vary in structure. Some provide questions and answer choices, while others may require systems to reason over observations and provide explanations by the choice of the most appropriate hypothesis. This is an ontology that provides a common vocabulary for annotating datasets that compose commonsense reasoning benchmarks, as well as submissions, and systems. Its goal is to allow diverse benchmarks to be compared, integrated, and also support the analysis of systems and machine-learning models."
+    "@value" : "The main goal in commonsense reasoning is to improve the score of systems/models against specific commonsense question-answering benchmarks. In this context, leaderboards exist to act as hubs for hosting benchmarks and allowing systems' submissions that try to improve the score. These benchmarks vary in structure. Some provide questions and answer choices, while others may provide factual observations and require reasoners to choose the most appropriate hypothesis to explain them. This is an ontology that provides a common vocabulary for annotating datasets that compose commonsense reasoning benchmarks, as well as submissions, and systems. Its goal is to allow diverse benchmarks to be compared, integrated, and also support the analysis of systems and machine-learning models."
   } ],
   "http://schema.org/name" : [ {
     "@value" : "MCS Ontology"

@@ -6,7 +6,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"http://purl.org/twc/mcs/","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://purl.org/twc/mcs/","name":"MCS Ontology", "headline":"The main goal in commonsense reasoning is to improve score against specific commonsense question-answering benchmarks. In this context, there exist leaderboards that act as a hub for hosting benchmarks and allowing systems submissions that try to improve the score. These benchmarks vary in structure. Some provide questions and answer choices, while others may require systems to reason over observations and provide explanations by the choice of the most appropriate hypothesis. This is an ontology that provides a common vocabulary for annotating datasets that compose commonsense reasoning benchmarks, as well as submissions, and systems. Its goal is to allow diverse benchmarks to be compared, integrated, and also support the analysis of systems and machine-learning models.", "datePublished":"2020-06-22", "version":"0.1", "author":[{"@type":"Person","name":"Henrique O. Santos"}]}</script>
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"http://purl.org/twc/mcs/","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://purl.org/twc/mcs/","name":"MCS Ontology", "headline":"The main goal in commonsense reasoning is to improve the score of systems/models against specific commonsense question-answering benchmarks. In this context, leaderboards exist to act as hubs for hosting benchmarks and allowing systems' submissions that try to improve the score. These benchmarks vary in structure. Some provide questions and answer choices, while others may provide factual observations and require reasoners to choose the most appropriate hypothesis to explain them. This is an ontology that provides a common vocabulary for annotating datasets that compose commonsense reasoning benchmarks, as well as submissions, and systems. Its goal is to allow diverse benchmarks to be compared, integrated, and also support the analysis of systems and machine-learning models.", "datePublished":"2020-06-22", "version":"0.1", "author":[{"@type":"Person","name":"Henrique O. Santos"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -79,22 +79,13 @@ function loadTOC(){
 <span>Ontology Specification Draft</span>
 </div>
 </div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
-The main goal in commonsense reasoning is to improve score against specific commonsense question-answering benchmarks. In this context, there exist leaderboards that act as a hub for hosting benchmarks and allowing systems submissions that try to improve the score. These benchmarks vary in structure. Some provide questions and answer choices, while others may require systems to reason over observations and provide explanations by the choice of the most appropriate hypothesis. This is an ontology that provides a common vocabulary for annotating datasets that compose commonsense reasoning benchmarks, as well as submissions, and systems. Its goal is to allow diverse benchmarks to be compared, integrated, and also support the analysis of systems and machine-learning models.</span>
+The main goal in commonsense reasoning is to improve the score of systems/models against specific commonsense question-answering benchmarks. In this context, leaderboards exist to act as hubs for hosting benchmarks and allowing systems' submissions that try to improve the score. These benchmarks vary in structure. Some provide questions and answer choices, while others may provide factual observations and require reasoners to choose the most appropriate hypothesis to explain them. This is an ontology that provides a common vocabulary for annotating datasets that compose commonsense reasoning benchmarks, as well as submissions, and systems. Its goal is to allow diverse benchmarks to be compared, integrated, and also support the analysis of systems and machine-learning models.</span>
 </div>
 <div id="toc"></div> 
 
 <!--INTRODUCTION SECTION-->
     <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-    Machine commonsense Benchmarks vary in structure and in purpose.
-    Some provide plain question and answer choices while others may
-    provide additional context alongside questions or even just provide
-    narratives in the form of observations and hypothesis choices to
-    explain them. These benchmarks are commonly hosted on a leaderboard
-    website, where they don't share a common modeling schema. This
-    ontology aims to provide a common benchmark modeling that can be
-    leveraged in benchmark systems to allow comparison and integration.
-    
     We have analyzed the following commonsense benchmarks:
     <ul>
         <li>CycIC</li>
