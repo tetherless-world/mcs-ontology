@@ -79,7 +79,7 @@ function loadTOC(){
 <span>Ontology Specification Draft</span>
 </div>
 </div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
-The main goal in commonsense reasoning is to improve the score of systems/models against specific commonsense question-answering benchmarks. In this context, leaderboards exist to act as hubs for hosting benchmarks and allowing systems' submissions that try to improve the score. These benchmarks vary in structure. Some provide questions and answer choices, while others may provide factual observations and require reasoners to choose the most appropriate hypothesis to explain them. This is an ontology that provides a common vocabulary for annotating datasets that compose commonsense reasoning benchmarks, as well as submissions, and systems. Its goal is to allow diverse benchmarks to be compared, integrated, and also support the analysis of systems and machine-learning models.</span>
+   One goal in commonsense reasoning systems includes being able to answer common-sense reasoning questions.  In order to compare systems, a number of benchmark question sets have arisen. Leaderboards have emerged to act as hubs for hosting benchmarks and supporting infrastructure that accepts submissions of commonsense reasoning systems that then get scored against the benchmarks. These benchmarks vary in structure. Some provide questions and answer choices, while others may provide factual observations and require reasoners to choose the most appropriate hypothesis to explain them. We provide an ontology that provides a common vocabulary that can be used to annotate datasets that compose commonsense reasoning benchmarks, as well as submissions, and systems. Our goal with this ontology is to allow diverse benchmarks to be compared, integrated, and also support the analysis of systems and machine-learning models.  What is described below is our alpha version and we welcome comments.</span>
 </div>
 <div id="toc"></div> 
 
@@ -98,6 +98,30 @@ The main goal in commonsense reasoning is to improve the score of systems/models
     
     And we have also worked with bechmark submissions from the AI2 leaderboard
     and state-of-the-art reasoners (including KagNet and cycic-transformers).</span>
+
+    <h3 id="objectives" class="list">Ontology objectives</h3>
+    <span class="markdown">
+        This ontology was developed with the following immediate objectives:
+        <ul>
+            <li>Enable benchmark datasets to be discoverable and interpretable</li>
+            <li>Support conversion of benchmarks and systems' outputs to a common format</li>
+            <li>Allow the comparison, contrast, and integration of bechmarks and system's outputs</li>
+        </ul>
+    
+        The ontology currently allows:
+        <ul>
+            <li>Representation of benchmarks, including elements from the bechmarks listed above</li>
+            <li>Representation of submissions from the AI2 leaderboard</li>
+        </ul>
+    
+        Next steps:
+        <ul>
+            <li>Model paths</li>
+            <li>Model groundings</li>
+            <li>Continue to review and adapt the ontology to match additional benchmarks</li>
+        </ul>
+        </span>
+    
 <div id="namespacedeclarations">
 <h3 id="ns" class="list">Namespace declarations</h3>
 <div id="ns" align="center">
