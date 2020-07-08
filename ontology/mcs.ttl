@@ -10,7 +10,7 @@
 
 <http://purl.org/twc/mcs/> rdf:type owl:Ontology ;
                             owl:versionIRI <http://purl.org/twc/mcs/0.1> ;
-                            owl:imports schema: ;
+                            owl:imports <https://schema.org/docs/schemaorg.owl> ;
                             vann:preferredNamespacePrefix "mcs" ;
                             vann:preferredNamespaceUri "http://purl.org/twc/mcs/" ;
                             schema:creator "Henrique O. Santos" ;
@@ -47,15 +47,6 @@ schema:description rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  http://purl.org/twc/mcs/antecedent
-:antecedent rdf:type owl:ObjectProperty ;
-            rdfs:subPropertyOf schema:hasPart ;
-            rdfs:domain :BenchmarkSample ;
-            rdfs:range :BenchmarkAntecedent ;
-            rdfs:comment "Indicates the list of elements (antecedent) that is part of this benchmark sample." ;
-            rdfs:label "antecedent" .
-
-
 ###  http://purl.org/twc/mcs/choices
 :choices rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf schema:hasPart ;
@@ -63,6 +54,15 @@ schema:description rdf:type owl:AnnotationProperty .
          rdfs:range :BenchmarkChoices ;
          rdfs:comment "Indicates a list of choices that is part of this benchmark sample." ;
          rdfs:label "choices" .
+
+
+###  http://purl.org/twc/mcs/input
+:input rdf:type owl:ObjectProperty ;
+       rdfs:subPropertyOf schema:hasPart ;
+       rdfs:domain :BenchmarkSample ;
+       rdfs:range :BenchmarkInput ;
+       rdfs:comment "Indicates the list of elements (input) that is part of this benchmark sample." ;
+       rdfs:label "input" .
 
 
 ###  http://purl.org/twc/mcs/resultOf
@@ -101,13 +101,6 @@ schema:description rdf:type owl:AnnotationProperty .
                  rdfs:subClassOf :BenchmarkChoice ;
                  rdfs:comment "A benchmark answer choice." ;
                  rdfs:label "BenchmarkAnswer" .
-
-
-###  http://purl.org/twc/mcs/BenchmarkAntecedent
-:BenchmarkAntecedent rdf:type owl:Class ;
-                     rdfs:subClassOf schema:ItemList ;
-                     rdfs:comment "A list of elements that compose a benchmark sample." ;
-                     rdfs:label "BenchmarkAntecedent" .
 
 
 ###  http://purl.org/twc/mcs/BenchmarkChoice
@@ -164,6 +157,13 @@ schema:description rdf:type owl:AnnotationProperty .
                      rdfs:subClassOf :BenchmarkChoice ;
                      rdfs:comment "A benchmark's sample hypothesis choice." ;
                      rdfs:label "BenchmarkHypothesis" .
+
+
+###  http://purl.org/twc/mcs/BenchmarkInput
+:BenchmarkInput rdf:type owl:Class ;
+                rdfs:subClassOf schema:ItemList ;
+                rdfs:comment "A list of elements that compose a benchmark sample ." ;
+                rdfs:label "BenchmarkInput" .
 
 
 ###  http://purl.org/twc/mcs/BenchmarkObservation
