@@ -21,17 +21,18 @@
 	schema:name "Commonsense Benchmark Ontology" ;
 	owl:imports <https://schema.org/docs/schemaorg.owl> ;
 	owl:versionIRI :0.1 ;
-	owl:versionInfo "0.1"^^xsd:decimal ;
 	.
 
 :Animals
 	a owl:Class ;
 	rdfs:subClassOf schema:DefinedTerm ;
+	rdfs:label "Animals" ;
 	.
 
 :Arithmetic
 	a owl:Class ;
 	rdfs:subClassOf schema:DefinedTerm ;
+	rdfs:label "Arithmetic" ;
 	.
 
 :Benchmark
@@ -170,36 +171,43 @@
 :Capabilities
 	a owl:Class ;
 	rdfs:subClassOf schema:DefinedTerm ;
+	rdfs:label "Capabilities" ;
 	.
 
 :CausalReasoning
 	a owl:Class ;
 	rdfs:subClassOf schema:DefinedTerm ;
+	rdfs:label "CausalReasoning" ;
 	.
 
 :Classification
 	a owl:Class ;
 	rdfs:subClassOf schema:DefinedTerm ;
+	rdfs:label "Classification" ;
 	.
 
 :Composition
 	a owl:Class ;
 	rdfs:subClassOf schema:DefinedTerm ;
+	rdfs:label "Composition" ;
 	.
 
 :Conceptual
 	a owl:Class ;
 	rdfs:subClassOf schema:DefinedTerm ;
+	rdfs:label "Conceptual" ;
 	.
 
 :Counterfactual
 	a owl:Class ;
 	rdfs:subClassOf schema:DefinedTerm ;
+	rdfs:label "Counterfactual" ;
 	.
 
 :Culture
 	a owl:Class ;
 	rdfs:subClassOf schema:DefinedTerm ;
+	rdfs:label "Culture" ;
 	.
 
 :DevScore
@@ -212,41 +220,49 @@
 :Disjointness
 	a owl:Class ;
 	rdfs:subClassOf schema:DefinedTerm ;
+	rdfs:label "Disjointess" ;
 	.
 
 :Events
 	a owl:Class ;
 	rdfs:subClassOf schema:DefinedTerm ;
+	rdfs:label "Events" ;
 	.
 
 :LogicalReasoning
 	a owl:Class ;
 	rdfs:subClassOf schema:DefinedTerm ;
+	rdfs:label "LogicalReasoning" ;
 	.
 
 :Nature
 	a owl:Class ;
 	rdfs:subClassOf schema:DefinedTerm ;
+	rdfs:label "Nature" ;
 	.
 
 :Norms
 	a owl:Class ;
 	rdfs:subClassOf schema:DefinedTerm ;
+	rdfs:label "Norms" ;
 	.
 
 :ObjectProperties
 	a owl:Class ;
 	rdfs:subClassOf schema:DefinedTerm ;
+	rdfs:label "ObjectProperties" ;
 	.
 
 :Quotation
 	a owl:Class ;
 	rdfs:subClassOf schema:DefinedTerm ;
+	rdfs:label "Quotation" ;
 	.
 
 :SocialRelations
 	a owl:Class ;
 	rdfs:subClassOf schema:DefinedTerm ;
+	rdfs:label "SocialRelations" ;
 	.
 
 :Submission
@@ -266,11 +282,13 @@
 :TemporalReasoning
 	a owl:Class ;
 	rdfs:subClassOf schema:DefinedTerm ;
+	rdfs:label "TemporalReasoning" ;
 	.
 
 :TemporalSequences
 	a owl:Class ;
 	rdfs:subClassOf schema:DefinedTerm ;
+	rdfs:label "TemporalSequences" ;
 	.
 
 :TestScore
@@ -283,6 +301,7 @@
 :TheoryOfMind
 	a owl:Class ;
 	rdfs:subClassOf schema:DefinedTerm ;
+	rdfs:label "TheoryOfMind" ;
 	.
 
 :choices
