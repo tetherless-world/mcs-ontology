@@ -1,7 +1,7 @@
 version: 2
 jobs:
   hygiene_tests:
-    working_directory: /git-mcs-ontology
+    working_directory: /git/mcs-ontology
     docker:
       - image: docker/compose:debian-1.26.2
     steps:
