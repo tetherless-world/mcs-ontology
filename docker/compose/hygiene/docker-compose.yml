@@ -14,7 +14,7 @@ services:
       - ONTPUB_EXCLUDED=/archived
       - WORKSPACE
     volumes:
-      - ./../../../..:/input
+      - ./../../..:/input
       - ./../../../output:/output
       - /tmp:/var/tmp
     command: /publisher/publish.sh hygiene
