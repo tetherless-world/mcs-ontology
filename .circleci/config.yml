@@ -5,12 +5,12 @@ jobs:
     docker:
       - image: docker/compose:debian-1.26.2
     steps:
-      - checkout
-      - setup_remote_docker
       - run:
           name: Install official git
           command: |
-            sudo apt update && sudo apt install -y git
+            apt update && apt install -y git
+      - checkout
+      - setup_remote_docker
       - run:
           name: Run ontology hygiene tests
           command: |
