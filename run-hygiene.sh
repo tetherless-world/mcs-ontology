@@ -1,6 +1,7 @@
 #!/bin/bash
 
 mcs_dir=${mcs_dir:-"$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"}
+echo $mcs_dir
 
 export ONTPUB_FAMILY="${mcs_dir##*/}"
 export WORKSPACE="$(cd "${mcs_dir}" && cd .. && pwd)"
