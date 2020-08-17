@@ -11,4 +11,4 @@ cd "$mcs_dir/docker/compose/hygiene"
 docker-compose pull mcs_hygiene
 
 # Run the hygiene script
-docker-compose run -d mcs_hygiene
+docker-compose up -d mcs_hygiene
