@@ -25,7 +25,7 @@ jobs:
       - run:
           name: Run hygiene tests
           command: |
-            docker exec -d mcs_hygiene "/publisher/publish.sh hygiene"
+            docker exec -d mcs_hygiene /publisher/publish.sh hygiene
       - run:
           name: Copy tests results back
           command: |
