@@ -10,18 +10,15 @@ jobs:
       - run:
           name: Start hygiene container
           command: |
-            bash run-hygiene.sh
+            bash .hygiene/start-container.sh
       - run:
           name: Create needed dirs in the hygiene container
           command: |
-            docker exec -d mcs_hygiene mkdir /input
-            docker exec -d mcs_hygiene mkdir /output
-            docker exec -d mcs_hygiene mkdir /output/mcs_ontology
-            docker exec -d mcs_hygiene mkdir /var/tmp
+            bash .hygiene/create-directories.sh
       - run:
-          name: Copy git repo into hygiene container
+          name: Copy and organize git repo in hygiene container
           command: |
-            docker cp . mcs_hygiene:/input/mcs-ontology
+            bash .hygiene/copy-to-container.sh
       - run:
           name: Run hygiene tests
           command: |
