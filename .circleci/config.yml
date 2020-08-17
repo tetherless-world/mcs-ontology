@@ -10,7 +10,7 @@ jobs:
       - run:
           name: Run ontology hygiene tests
           command: |
-            run-hygiene.sh
+            chmod +x run-hygiene.sh && run-hygiene.sh
 workflows:
   version: 2
   build_and_test:
