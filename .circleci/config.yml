@@ -14,10 +14,10 @@ jobs:
       - run:
           name: Create needed dirs in the hygiene container
           command: |
-            docker exec -d mcs_hygiene "mkdir /input"
-            docker exec -d mcs_hygiene "mkdir /output"
-            docker exec -d mcs_hygiene "mkdir /output/mcs_ontology"
-            docker exec -d mcs_hygiene "mkdir /var/tmp"
+            docker exec -d mcs_hygiene mkdir /input
+            docker exec -d mcs_hygiene mkdir /output
+            docker exec -d mcs_hygiene mkdir /output/mcs_ontology
+            docker exec -d mcs_hygiene mkdir /var/tmp
       - run:
           name: Copy git repo into hygiene container
           command: |
