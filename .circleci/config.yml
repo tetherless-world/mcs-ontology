@@ -3,7 +3,7 @@ jobs:
   hygiene_tests:
     working_directory: /git/mcs-ontology
     docker:
-      - image: docker/compose:latest
+      - image: docker/compose:debian-1.26.2
     steps:
       - checkout
       - setup_remote_docker
