@@ -12,20 +12,16 @@ jobs:
           command: |
             bash run-hygiene.sh
       - run:
-          name: Debug
-          command: |
-            docker ps -a
-      - run:
-          name: Copy git repo into hygiene container
-          command: |
-            docker cp . mcs_hygiene:/input/mcs-ontology
-      - run:
           name: Create needed dirs in the hygiene container
           command: |
             docker exec -d mcs_hygiene "mkdir /input"
             docker exec -d mcs_hygiene "mkdir /output"
             docker exec -d mcs_hygiene "mkdir /output/mcs_ontology"
             docker exec -d mcs_hygiene "mkdir /var/tmp"
+      - run:
+          name: Copy git repo into hygiene container
+          command: |
+            docker cp . mcs_hygiene:/input/mcs-ontology
       - run:
           name: Run hygiene tests
           command: |
