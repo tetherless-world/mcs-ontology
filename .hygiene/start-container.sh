@@ -5,7 +5,7 @@ mcs_dir=${mcs_dir:-"$( cd "$( dirname "${BASH_SOURCE[0]}/.." )" >/dev/null 2>&1 
 export ONTPUB_FAMILY="${mcs_dir##*/}"
 export WORKSPACE="$(cd "${mcs_dir}" && cd .. && pwd)"
 
-cd "$mcs_dir/docker/compose/hygiene"
+cd "$mcs_dir/.hygiene/docker/compose/hygiene"
 docker-compose pull mcs_hygiene
 
 # Run the hygiene script in detached mode
