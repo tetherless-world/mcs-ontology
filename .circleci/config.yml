@@ -3,14 +3,14 @@ jobs:
   hygiene_tests:
     working_directory: /git/mcs-ontology
     docker:
-      - image: docker/compose:debian-1.26.2
+      - image: docker/compose:latest
     steps:
       - checkout
       - setup_remote_docker
       - run:
           name: Run ontology hygiene tests
           command: |
-            bash run-hygiene.sh
+            ./run-hygiene.sh
 workflows:
   version: 2
   build_and_test:
