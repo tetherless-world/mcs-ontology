@@ -3,12 +3,8 @@ jobs:
   hygiene_tests:
     working_directory: /git/mcs-ontology
     docker:
-      - image: docker/compose:debian-1.26.2
+      - image: docker/compose:latest
     steps:
-      #- run:
-      #    name: Install official git
-      #    command: |
-      #      apt update && apt install -y git
       - checkout
       - setup_remote_docker
       - run:
