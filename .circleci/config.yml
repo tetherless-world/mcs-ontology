@@ -8,9 +8,28 @@ jobs:
       - checkout
       - setup_remote_docker
       - run:
-          name: Run ontology hygiene tests
+          name: Start hygiene container
           command: |
             bash run-hygiene.sh
+      - run:
+          name: Copy git repo into hygiene container
+          command: |
+            docker cp . mcs_hygiene:/input/mcs-ontology
+      - run:
+          name: Create needed dirs in the hygiene container
+          command: |
+            docker exec -d mcs_hygiene "mkdir /input"
+            docker exec -d mcs_hygiene "mkdir /output"
+            docker exec -d mcs_hygiene "mkdir /output/mcs_ontology"
+            docker exec -d mcs_hygiene "mkdir /var/tmp"
+      - run:
+          name: Run hygiene tests
+          command: |
+            docker exec -d mcs_hygiene "/publisher/publish.sh hygiene"
+      - run:
+          name: Copy tests results back
+          command: |
+            docker cp -d mcs_hygiene:/output/mcs-ontology /output
 workflows:
   version: 2
   build_and_test:
