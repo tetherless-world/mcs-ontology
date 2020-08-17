@@ -10,7 +10,7 @@ jobs:
       #    command: |
       #      apt update && apt install -y git
       - checkout
-      - setup_remote_docker
+      #- setup_remote_docker
       - run:
           name: Run ontology hygiene tests
           command: |
