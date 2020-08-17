@@ -17,5 +17,5 @@ services:
     #  - ./../../../..:/input
     #  - ./../../../output:/output
     #  - /tmp:/var/tmp
-    #command: while true; do sleep 1000 ; done
+    command: while true; do sleep 1000 ; done
     #command: /publisher/publish.sh hygiene
