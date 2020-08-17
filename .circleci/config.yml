@@ -30,7 +30,7 @@ jobs:
       - run:
           name: Stop the hygiene container
           command: |
-            docker-compose down
+            cd .hygiene/docker/compose/hygiene && docker-compose down
 workflows:
   version: 2
   build_and_test:
