@@ -13,9 +13,4 @@ services:
       - ONTPUB_SUBDIR=/ontology
       - ONTPUB_EXCLUDED=/archived
       - WORKSPACE
-    #volumes:
-    #  - ./../../../..:/input
-    #  - ./../../../output:/output
-    #  - /tmp:/var/tmp
     command: tail -f /dev/null
-    #command: /publisher/publish.sh hygiene
