@@ -10,5 +10,5 @@ mkdir /output
 cd "$mcs_dir/docker/compose/hygiene"
 docker-compose pull mcs_hygiene
 
-# Run the hygiene script
+# Run the hygiene script in detached mode
 docker-compose up -d mcs_hygiene
