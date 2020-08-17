@@ -25,11 +25,11 @@ jobs:
       - run:
           name: Run hygiene tests
           command: |
-            docker exec -d mcs_hygiene /publisher/publish.sh hygiene
+            docker exec mcs_hygiene /publisher/publish.sh hygiene
       - run:
           name: Copy tests results back
           command: |
-            docker cp -d mcs_hygiene:/output/mcs-ontology /output
+            docker cp mcs_hygiene:/output/mcs-ontology /output
 workflows:
   version: 2
   build_and_test:
