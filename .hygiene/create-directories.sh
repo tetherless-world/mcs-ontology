@@ -11,4 +11,3 @@ mkdir etc/testing/hygiene
 # container dirs
 docker exec hygiene mkdir /input
 docker exec hygiene mkdir /output
-docker exec hygiene mkdir /var/tmp
