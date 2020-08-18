@@ -1,7 +1,7 @@
 version: 2
 jobs:
   hygiene_tests:
-    working_directory: /git/mcs-ontology
+    working_directory: /git/repo
     docker:
       - image: docker/compose:debian-1.26.2
     steps:
@@ -22,11 +22,11 @@ jobs:
       - run:
           name: Run hygiene tests
           command: |
-            docker exec mcs_hygiene /publisher/publish.sh hygiene
+            docker exec hygiene /publisher/publish.sh hygiene
       - run:
           name: Copy tests results back
           command: |
-            docker cp mcs_hygiene:/output/mcs-ontology /output
+            docker cp hygiene:/output/mcs-ontology /output
       - run:
           name: Stop the hygiene container
           command: |
