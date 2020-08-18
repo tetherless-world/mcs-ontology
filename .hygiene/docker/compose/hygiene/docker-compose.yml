@@ -1,6 +1,6 @@
 version: '3'
 services:
-  mcs_hygiene:
+  hygiene:
     container_name: hygiene
     image: tetherlessworld/ontology-publisher:v0.2.0
     environment:
