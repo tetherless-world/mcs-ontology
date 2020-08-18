@@ -1,12 +1,12 @@
 #!/bin/bash
 
-mcs_dir=${mcs_dir:-"$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." >/dev/null 2>&1 && pwd )"}
+repo_dir=${repo_dir:-"$( cd "$( dirname "${BASH_SOURCE[0]}" )/.." >/dev/null 2>&1 && pwd )"}
 
-export ONTPUB_FAMILY="${mcs_dir##*/}"
-export WORKSPACE="$(cd "${mcs_dir}" && cd .. && pwd)"
+export ONTPUB_FAMILY="${repo_dir##*/}"
+export WORKSPACE="$(cd "${repo_dir}" && cd .. && pwd)"
 
-cd "$mcs_dir/.hygiene/docker/compose/hygiene"
-docker-compose pull mcs_hygiene
+cd "$repo_dir/.hygiene/docker/compose/hygiene"
+docker-compose pull hygiene
 
 # Run the hygiene script in detached mode
-docker-compose up -d mcs_hygiene
+docker-compose up -d hygiene

@@ -1,7 +1,7 @@
 version: '3'
 services:
-  mcs_hygiene:
-    container_name: mcs_hygiene
+  hygiene:
+    container_name: hygiene
     image: tetherlessworld/ontology-publisher:v0.2.0
     environment:
       - ONTPUB_FAMILY=${ONTPUB_FAMILY:-mcs-ontology}

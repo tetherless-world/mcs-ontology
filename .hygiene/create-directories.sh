@@ -9,6 +9,5 @@ mkdir etc/testing
 mkdir etc/testing/hygiene
 
 # container dirs
-docker exec -d mcs_hygiene mkdir /input
-docker exec -d mcs_hygiene mkdir /output
-docker exec -d mcs_hygiene mkdir /var/tmp
+docker exec hygiene mkdir /input
+docker exec hygiene mkdir /output
