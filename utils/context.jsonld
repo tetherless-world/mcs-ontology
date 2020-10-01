@@ -19,7 +19,7 @@
       "@id": "schema:dataset",
       "@type": "@id"
     },
-    "dataCreated": "schema:dateCreated",
+    "dateCreated": "schema:dateCreated",
     "description": "schema:description",
     "endTime": "schema:endTime",
     "includedInDataset": {
