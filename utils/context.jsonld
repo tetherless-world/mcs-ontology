@@ -33,10 +33,6 @@
     "name": "schema:name",
     "text": "schema:text",
     "position": "schema:position",
-    "resultOf": {
-      "@id": "schema:resultOf",
-      "@type": "@id"
-    },
     "startTime": "schema:startTime",
     "url": "schema:url",
     "value": {
