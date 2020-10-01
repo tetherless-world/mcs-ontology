@@ -1,0 +1,8 @@
+{
+  "@context": "https://tetherless-world.github.io/mcs-ontology/utils/context.jsonld",
+  "@type": "SubmissionSample",
+  "@id": "CycIC-324917-submission",
+  "includedInDataset": "brg0m7uqaup1kchu59g0",
+  "value": 2,
+  "about": "CycIC-324917"
+}

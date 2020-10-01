@@ -1,0 +1,43 @@
+{
+  "@context": {
+    "@base": "http://purl.org/twc/mcs/",
+    "@vocab": "http://purl.org/twc/mcs/",
+    "schema": "http://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "about": {
+      "@id": "schema:about",
+      "@type": "@id"
+    },
+    "abstract": "schema:abstract",
+    "author": "schema:author",
+    "contentRating": {
+      "@id": "schema:contentRating",
+      "@type": "@id"
+    },
+    "contributor": "schema:contributor",
+    "dataset": {
+      "@id": "schema:dataset",
+      "@type": "@id"
+    },
+    "dateCreated": "schema:dateCreated",
+    "description": "schema:description",
+    "endTime": "schema:endTime",
+    "includedInDataset": {
+      "@id": "schema:includedInDataset",
+      "@type": "@id"
+    },
+    "isBasedOn": {
+      "@id": "schema:isBasedOn",
+      "@type": "@id"
+    },
+    "name": "schema:name",
+    "text": "schema:text",
+    "position": "schema:position",
+    "startTime": "schema:startTime",
+    "url": "schema:url",
+    "value": {
+      "@id": "schema:value",
+      "@type": "@id"
+    }
+  }
+}

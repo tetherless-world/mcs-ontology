@@ -1,0 +1,38 @@
+{
+  "@context": "https://tetherless-world.github.io/mcs-ontology/utils/context.jsonld",
+  "@id": "SocialIQA-[line_number]",
+  "@type": "BenchmarkSample",
+  "includedInDataset": "SocialIQA/train",
+  "input": [
+    {
+      "@type": "BenchmarkContext",
+      "name": "Context",
+      "text": "Aubrey offered tribute to the gods. They did this out of reverence.",
+      "position": 0
+    },
+    {
+      "@type": "BenchmarkQuestion",
+      "name": "Question",
+      "text": "How would Others feel as a result?",
+      "position": 1
+    }
+  ],
+  "choice": [
+    {
+      "@type": "BenchmarkAnswer",
+      "text": "they were different",
+      "position": 1
+    },
+    {
+      "@type": "BenchmarkAnswer",
+      "text": "religious and spiritual",
+      "position": 2
+    },
+    {
+      "@type": "BenchmarkAnswer",
+      "text": "they were unique",
+      "position": 3
+    }
+  ],
+  "correctChoice": 3
+}
