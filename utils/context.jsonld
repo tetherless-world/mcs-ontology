@@ -1,6 +1,7 @@
 {
   "@context": {
     "@base": "http://purl.org/twc/mcs/",
+    "@vocab": "http://purl.org/twc/mcs/",
     "schema": "http://schema.org/",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "about": {
