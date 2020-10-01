@@ -7,7 +7,7 @@
   "dateCreated": "06-09-2020T18:20:15Z",
   "isBasedOn": "CycIC",
   "contributor": {
-    "@type": "Person",
+    "@type": "schema:Person",
     "name": "Sam Teeter from Cycorp"
   },
   "contentRating": [
@@ -23,7 +23,7 @@
     }
   ],
   "resultOf": {
-    "@type": "SoftwareApplication",
+    "@type": "schema:SoftwareApplication",
     "startTime": "06-09-2020T18:22:53Z",
     "endTime": "06-09-2020T19:17:11Z",
     "url": "https://github.com/cycorp/cycic-transformers"
