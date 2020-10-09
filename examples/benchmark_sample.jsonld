@@ -5,12 +5,14 @@
   "includedInDataset": "SocialIQA/train",
   "input": [
     {
+      "@id": "SocialIQA-[line_number]-input-0",
       "@type": "BenchmarkContext",
       "name": "Context",
       "text": "Aubrey offered tribute to the gods. They did this out of reverence.",
       "position": 0
     },
     {
+      "@id": "SocialIQA-[line_number]-input-1",
       "@type": "BenchmarkQuestion",
       "name": "Question",
       "text": "How would Others feel as a result?",
@@ -19,20 +21,25 @@
   ],
   "choice": [
     {
+      "@id": "SocialIQA-[line_number]-choice-1",
       "@type": "BenchmarkAnswer",
       "text": "they were different",
       "position": 1
     },
     {
+      "@id": "SocialIQA-[line_number]-choice-2",
       "@type": "BenchmarkAnswer",
       "text": "religious and spiritual",
       "position": 2
     },
     {
+      "@id": "SocialIQA-[line_number]-choice-3",
       "@type": "BenchmarkAnswer",
       "text": "they were unique",
       "position": 3
     }
   ],
-  "correctChoice": 3
+  "correctChoice": {
+    "@id": "SocialIQA-[line_number]-choice-3"
+  }
 }
