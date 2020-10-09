@@ -3,6 +3,8 @@
   "@type": "SubmissionSample",
   "@id": "CycIC-324917-submission",
   "includedInDataset": "brg0m7uqaup1kchu59g0",
-  "value": 2,
+  "correctChoice": {
+    "@id": "CycIC-324917-choice-X"
+  },
   "about": "CycIC-324917"
 }
